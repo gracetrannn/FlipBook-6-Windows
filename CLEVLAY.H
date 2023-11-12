@@ -1,0 +1,6 @@
+class
+
+	int Selected();
+protected:
+	
+

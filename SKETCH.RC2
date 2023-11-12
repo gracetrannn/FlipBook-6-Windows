@@ -1,0 +1,113 @@
+//
+// SKETCH.RC2 - resources App Studio does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by App Studio
+#endif //APSTUDIO_INVOKED
+#include "winver.h"
+#define _MSC_VER 1400  // for version and manifest
+#include "myver.h"
+
+////////
+// material which is ifdefed
+//
+#ifdef _THEDISC
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "The DISC! 5\nUntitled\nScenes\n Scenes (*.dgc)\n.dgc\nScene\n DigiCel Scene"
+    AFX_IDS_APP_TITLE     "TheDISC!"
+END
+	IDR_MAINFRAME           ICON    DISCARDABLE     "thedisc.ICO"
+IMPRINT 		DGCRES THEDISC.XYZ
+#else
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME          "DigiCel FlipBook 6 \nUntitled\nScenes\n Scenes (*.dgc)\n.dgc\nScene\n DigiCel Scene"
+    AFX_IDS_APP_TITLE      "DigiCel FlipBook"
+END
+	IDR_MAINFRAME           ICON    DISCARDABLE     "flipbook.ICO"
+IMPRINT 		DGCRES FLIPBUK5.XYZ
+LIPSYNC 		DGCRES LIPSYNCH.LPS
+#endif
+/////////////////////////////////////////////////////////////////////////////
+// Version stamp for this .EXE
+
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       MYFILEVERSION
+  PRODUCTVERSION    MYPRODVERSION
+  FILEFLAGSMASK     VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+  FILEFLAGS         VS_FF_DEBUG|VS_FF_PRIVATEBUILD|VS_FF_PRERELEASE
+#else
+  FILEFLAGS         0 // final version
+#endif
+  FILEOS            VOS_DOS_WINDOWS32
+  FILETYPE          VFT_APP
+  FILESUBTYPE       0   // not used
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904E4" // Lang=US English, CharSet=Windows Multilingual
+		BEGIN 
+			VALUE "CompanyName",     MYCOMPANY
+			VALUE "FileDescription", MYFILEDESC
+			VALUE "FileVersion",     MYSTRFILEVERSION
+			VALUE "InternalName",    MYINTERNAL
+			VALUE "LegalCopyright",  "Copyright (c) DigiCel, Inc.2000 - 2014\0"
+			VALUE "LegalTrademarks", "FlipBook is a trademark of Digicel, Inc.\0"
+			VALUE "OriginalFilename",MYORIGNAME
+			VALUE "ProductName",     MYPRODUCT
+			VALUE "ProductVersion",  MYSTRPRODVERSION
+			END
+	END
+	BLOCK "VarFileInfo" 
+	BEGIN 
+		VALUE "Translation", 0x409, 1252
+			// English language (0x409) and the Windows ANSI codepage (1252)
+	END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+// Add additional manually edited resources here...
+PALETTE		DGCRES INITPAL.DAT
+SHUTTER 		WAVE SHUTTER.WAV
+FINISHED 	WAVE FINISHED.WAV
+////
+
+ID_FILE_NEW		BITMAP DISCARDABLE "new.bmp"
+ID_FILE_OPEN	BITMAP DISCARDABLE "open.bmp"
+ID_FILE_SAVE	BITMAP DISCARDABLE "save.bmp"
+ID_EDIT_CUT 	BITMAP DISCARDABLE "cut.bmp"
+ID_EDIT_COPY	BITMAP DISCARDABLE "copy.bmp"
+ID_EDIT_PASTE	BITMAP DISCARDABLE "paste.bmp"
+ID_EDIT_UNDO	BITMAP DISCARDABLE "undo.bmp"
+ID_EDIT_REDO	BITMAP DISCARDABLE "redo.bmp"
+ID_FILE_PRINT	BITMAP DISCARDABLE "print.bmp"
+ID_OPT_FG			BITMAP DISCARDABLE "light.bmp"
+ID_OPT_BG			BITMAP DISCARDABLE "bg.bmp"
+ID_OPT_KEEP		BITMAP DISCARDABLE "autosave.bmp"
+ID_VIEW_SHEET		BITMAP DISCARDABLE "xsheet.bmp"
+ID_VIEW_SOUND		BITMAP DISCARDABLE "sound.bmp"
+ID_VIEW_TIMING   	BITMAP DISCARDABLE "timing.bmp"
+ID_OPT_SHOWTHUMBS	BITMAP DISCARDABLE "thumbs.bmp"
+ID_FILE_CAPTURE		BITMAP DISCARDABLE "capture.bmp"
+ID_FILE_SCAN		BITMAP DISCARDABLE "scan.bmp"
+ID_VIEW_MODE		BITMAP DISCARDABLE "color.bmp"
+ID_VIEW_CAMERA		BITMAP DISCARDABLE "camera.bmp"
+ID_VIEW_LAYER		BITMAP DISCARDABLE "tones.bmp"
+ID_FILE_EDIT  		BITMAP DISCARDABLE "boomrang.bmp"
+ID_EXPORT_MAYA 		BITMAP DISCARDABLE "expmaya.bmp"
+
+
+//	ID_VIEW_LAY_COMBO  BITMAP DISCARDABLE "a.bmp"
+IDB_SLIDER              BITMAP  DISCARDABLE     "SLIDER.BMP"
+
+
+//#define MANIFEST_RESOURCE_ID 1
+//MANIFEST_RESOURCE_ID RT_MANIFEST "sketch.man"
+
+/////////////////////////////////////////////////////////////////////////////
+
+
