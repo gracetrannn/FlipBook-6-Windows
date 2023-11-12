@@ -1,0 +1,3938 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "colordlg.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""colordlg.h""\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""sketch.rc2""  // non-App Studio edited resources\r\n"
+    "\r\n"
+    "#include ""afxres.rc""  \t// Standard components\r\n"
+    "#include ""afxprint.rc""\t// printing/print preview resources\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "W95MBX03.ICO"
+IDI_ICON2               ICON                    "FACE03.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "TOOLBAR.BMP"
+IDB_SELECTTOOL          BITMAP                  "seltool.bmp"
+IDB_PENCILTOOL          BITMAP                  "pncltool.bmp"
+IDB_BRUSHTOOL           BITMAP                  "brshtool.bmp"
+IDB_FILLTOOL            BITMAP                  "filltool.bmp"
+IDB_ZOOMTOOL            BITMAP                  "zoomtool.bmp"
+IDB_HANDTOOL            BITMAP                  "handtool.bmp"
+IDB_WANDTOOL            BITMAP                  "wandtool.bmp"
+IDB_EYEDROPTOOL         BITMAP                  "idrptool.bmp"
+IDB_ERASERTOOL          BITMAP                  "erastool.bmp"
+IDB_TRACETOOL           BITMAP                  "pentool.bmp"
+IDB_MAT_FILL_TOOL       BITMAP                  "TFILLTOL.bmp"
+IDB_MAT_BRSH_TOOL       BITMAP                  "TBRSHTOL.bmp"
+IDB_INITBMP_DISC        BITMAP                  "thedisc.BMP"
+IDB_INITBMP             BITMAP                  "jupfly.BMP"
+IDB_CAM_SELECT_TOOL     BITMAP                  "seltool.bmp"
+IDB_CAM_PAN_TOOL        BITMAP                  "campan.bmp"
+IDB_CAM_ZOOM_TOOL       BITMAP                  "camzoom.bmp"
+IDB_CAM_ROTATE_TOOL     BITMAP                  "camrot.bmp"
+IDB_CAM_BLUR_TOOL       BITMAP                  "camblur.bmp"
+IDB_CAM_ALPHA_TOOL      BITMAP                  "camdiss.bmp"
+IDB_CAM_DALLKEYS        BITMAP                  "dallkeys.bmp"
+IDB_CAM_DTHISKEY        BITMAP                  "dthiskey.bmp"
+IDB_CAM_NEXTKEY         BITMAP                  "nextkey.bmp"
+IDB_CAM_PREVKEY         BITMAP                  "prevkey.bmp"
+IDB_EYE_OPEN            BITMAP                  "eyeopen.bmp"
+IDB_EYE_NOPEN           BITMAP                  "eyenopen.bmp"
+IDB_COL_THIN            BITMAP                  "colthin.bmp"
+IDB_COL_WIDE            BITMAP                  "colwide.bmp"
+IDB_COL_INFO            BITMAP                  "colinfo.bmp"
+IDB_EAR_OPEN            BITMAP                  "earopen.bmp"
+IDB_EAR_NOPEN           BITMAP                  "earnopen.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS, GRAYED
+        MENUITEM "Save As &Model...",           ID_FILE_SAVEAS_MODEL, GRAYED
+        MENUITEM "Revert",                      ID_FILE_REVERT
+        MENUITEM SEPARATOR
+        MENUITEM "Capture",                     ID_FILE_CAPTURE
+        MENUITEM "Scan",                        ID_FILE_SCAN
+        POPUP "&Import ..."
+        BEGIN
+            MENUITEM "Movie...",                    ID_FILE_IMPAVI
+            MENUITEM "Stills...",                   ID_FILE_IMPFILE
+            MENUITEM "Sound...",                    ID_FILE_IMPWAVE
+            MENUITEM "Palette...",                  ID_FILE_IMPORT_PAL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "External Edit...",            ID_FILE_EDIT
+        MENUITEM SEPARATOR
+        POPUP "&Library ..."
+        BEGIN
+            MENUITEM "Load...",                     ID_LIB_LOAD
+            MENUITEM "Save...",                     ID_LIB_SAVE
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Export ..."
+        BEGIN
+            MENUITEM "Export Still(s)",             ID_FILE_EXPORT
+            MENUITEM "Export Movie",                ID_FILE_PUBLISH
+            MENUITEM "Palette...",                  ID_FILE_EXPORT_PAL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "E&xit",                       ID_APP_EXIT
+        MENUITEM SEPARATOR
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Paste Reversed\tCtrl+R",      ID_EDIT_PASTEREVERSED
+        MENUITEM SEPARATOR
+        MENUITEM "&Crop\tCtrl+Shift+X",         ID_EDIT_OUTSIDE
+        MENUITEM SEPARATOR
+        MENUITEM "Insert",                      ID_EDIT_INS
+        MENUITEM "Delete",                      ID_EDIT_DEL
+        MENUITEM "Insert Blank Cel\tCtrl+B",    ID_EDIT_BLANK
+        MENUITEM SEPARATOR
+        MENUITEM "Clear Cel",                   ID_EDIT_CLEARC
+        MENUITEM "Revert Cel",                  ID_EDIT_REVERT
+        MENUITEM SEPARATOR
+        MENUITEM "Model",                       ID_EDIT_MODEL
+        MENUITEM SEPARATOR
+        MENUITEM "Append Level",                ID_EDIT_APPEND
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Color",                      ID_VIEW_MODE
+        MENUITEM "&Playback Controls",          ID_VIEW_VCR
+        MENUITEM "Timing",                      ID_VIEW_TIMING
+        MENUITEM SEPARATOR
+        POPUP "Zoom..."
+        BEGIN
+            MENUITEM "25%",                         ID_ZOOM_25
+            MENUITEM "33%",                         ID_ZOOM_33
+            MENUITEM "50%",                         ID_ZOOM_50
+            MENUITEM "100%\tAlt+Ctrl+0",            ID_ZOOM_100
+            MENUITEM "200%",                        ID_ZOOM_200
+            MENUITEM "300%",                        ID_ZOOM_300
+            MENUITEM "400%",                        ID_ZOOM_400
+            MENUITEM "800%",                        ID_ZOOM_800
+            MENUITEM "Fit",                         ID_ZOOM_FIT
+        END
+        POPUP "Preview..."
+        BEGIN
+            MENUITEM "Preview 1\tCtrl+1",           ID_PREVIEW_1
+            MENUITEM "Preview 2\tCtrl+2",           ID_PREVIEW_2
+            MENUITEM "Preview 3\tCtrl+3",           ID_PREVIEW_3
+            MENUITEM "Preview 4\tCtrl+4",           ID_PREVIEW_4
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&XSheet",                     ID_VIEW_SHEET
+        MENUITEM "Sound",                       ID_VIEW_SOUND
+        MENUITEM "&Palette/Model",              ID_VIEW_PALETTE
+        MENUITEM "Tool &Box",                   ID_VIEW_TOOLS
+        MENUITEM "Cam Tool Box",                ID_VIEW_CAM_TOOLS
+        MENUITEM "Video &Window",               ID_VIEW_VIDEO
+        POPUP "Camera"
+        BEGIN
+            MENUITEM "Dialog",                      ID_VIEW_CAMERA
+            MENUITEM SEPARATOR
+            MENUITEM "100 %",                       ID_VIEW_CAMERA_100
+            MENUITEM "50 %",                        ID_VIEW_CAMERA_50
+            MENUITEM "25 %",                        ID_VIEW_CAMERA_25
+            MENUITEM SEPARATOR
+            MENUITEM "Enlarge",                     ID_VIEW_CAMERA_ENLARGE
+            MENUITEM SEPARATOR
+            POPUP "Field Guide"
+            BEGIN
+                MENUITEM "Display",                     ID_VIEW_CAMERA_GRID
+                MENUITEM "Center Lines",                ID_VIEW_CAMERA_CENTER
+            END
+        END
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Settings...",                 ID_OPT_SETTING
+        MENUITEM "Light Box Options ...",       ID_OPT_LIGHTBOX
+        MENUITEM "Light Box On",                ID_OPT_FG
+        MENUITEM "Show BG",                     ID_OPT_BG
+        MENUITEM "AutoSave",                    ID_OPT_KEEP
+        MENUITEM "Show Thumbs",                 ID_OPT_SHOWTHUMBS
+        MENUITEM "Sound On",                    ID_OPT_SOUND
+        MENUITEM "Customize ToolBar",           ID_OPT_CUST_TB
+        MENUITEM SEPARATOR
+        MENUITEM "Auto Composite\tCtrl+K",      ID_OPT_AUTOCOMP
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Pencil\tY",                   ID_TOOL_PENCIL
+        MENUITEM "Trace\tT",                    ID_TOOL_TRACE
+        MENUITEM "Brush\tB",                    ID_TOOL_BRUSH
+        MENUITEM "Fill\tK",                     ID_TOOL_FILL
+        MENUITEM "Zoom\tZ",                     ID_TOOL_ZOOM
+        MENUITEM "Pan\tV",                      ID_TOOL_HAND
+        MENUITEM "Eye Dropper\tI",              ID_TOOL_EYEDROP
+        MENUITEM "Eraser\tE",                   ID_TOOL_ERASER
+        MENUITEM "Select\tM",                   ID_TOOL_SELECT
+    END
+    POPUP "&Actions"
+    BEGIN
+        MENUITEM "&Auto Fill",                  ID_ACTION_FILL
+        MENUITEM "&Flip",                       ID_ACTION_FLIP
+        MENUITEM "Auto &Matte",                 ID_ACTION_MATTE
+        MENUITEM "&Despeckle",                  ID_ACTION_SPECK
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Help",                        ID_APP_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  ID_APP_PROPERTIES
+        MENUITEM "Unlock FlipBook...",          ID_APP_REGISTER
+        MENUITEM "&About FlipBook...",          ID_APP_ABOUT
+        MENUITEM "&Check For Updates...",       ID_APP_UPDATES
+    END
+END
+
+IDR_COLORFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "Zoom..."
+        BEGIN
+            MENUITEM "25%",                         ID_ZOOM_25
+            MENUITEM "50%",                         ID_ZOOM_50
+            MENUITEM "100%\tAlt+Ctrl+0",            ID_ZOOM_100
+            MENUITEM "200%",                        ID_ZOOM_200
+            MENUITEM "300%",                        ID_ZOOM_300
+            MENUITEM "400%",                        ID_ZOOM_400
+            MENUITEM "800%",                        ID_ZOOM_800
+        END
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Show BG",                     ID_OPT_BG
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About FlipBook...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "B",            ID_EDIT_BLANK,          VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CLEAR_SEL,      VIRTKEY, ALT, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_EDIT_OUTSIDE,        VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_OUTSIDE,        VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "R",            ID_EDIT_PASTEREVERSED,  VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_KEY_BACK,            VIRTKEY, NOINVERT
+    VK_DOWN,        ID_KEY_CDOWN,           VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        ID_KEY_CDOWN,           VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F10,         ID_KEY_CF10,            VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          ID_KEY_CF9,             VIRTKEY, CONTROL, NOINVERT
+    VK_LEFT,        ID_KEY_CLEFT,           VIRTKEY, CONTROL, NOINVERT
+    VK_LEFT,        ID_KEY_CLEFT,           VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_RIGHT,       ID_KEY_CRIGHT,          VIRTKEY, CONTROL, NOINVERT
+    VK_RIGHT,       ID_KEY_CRIGHT,          VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_UP,          ID_KEY_CUP,             VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          ID_KEY_CUP,             VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_DOWN,        ID_KEY_DOWN,            VIRTKEY, NOINVERT
+    VK_END,         ID_KEY_END,             VIRTKEY, NOINVERT
+    VK_RETURN,      ID_KEY_ENTER,           VIRTKEY, NOINVERT
+    VK_F1,          ID_KEY_F1,              VIRTKEY, NOINVERT
+    VK_F10,         ID_KEY_F10,             VIRTKEY, NOINVERT
+    VK_F11,         ID_KEY_F11,             VIRTKEY, NOINVERT
+    VK_F12,         ID_KEY_F12,             VIRTKEY, NOINVERT
+    VK_F2,          ID_KEY_F2,              VIRTKEY, NOINVERT
+    VK_F3,          ID_KEY_F3,              VIRTKEY, NOINVERT
+    VK_F4,          ID_KEY_F4,              VIRTKEY, NOINVERT
+    VK_F5,          ID_KEY_F5,              VIRTKEY, NOINVERT
+    VK_F6,          ID_KEY_F6,              VIRTKEY, NOINVERT
+    VK_F7,          ID_KEY_F7,              VIRTKEY, NOINVERT
+    VK_F8,          ID_KEY_F8,              VIRTKEY, NOINVERT
+    VK_F9,          ID_KEY_F9,              VIRTKEY, NOINVERT
+    VK_HOME,        ID_KEY_HOME,            VIRTKEY, NOINVERT
+    VK_LEFT,        ID_KEY_LEFT,            VIRTKEY, NOINVERT
+    VK_NEXT,        ID_KEY_PGDN,            VIRTKEY, NOINVERT
+    VK_PRIOR,       ID_KEY_PGUP,            VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_KEY_RIGHT,           VIRTKEY, NOINVERT
+    VK_F10,         ID_KEY_SF10,            VIRTKEY, SHIFT, NOINVERT
+    VK_F11,         ID_KEY_SF11,            VIRTKEY, SHIFT, NOINVERT
+    VK_F12,         ID_KEY_SF12,            VIRTKEY, SHIFT, NOINVERT
+    VK_F9,          ID_KEY_SF9,             VIRTKEY, SHIFT, NOINVERT
+    VK_SPACE,       ID_KEY_SPACE,           VIRTKEY, NOINVERT
+    VK_UP,          ID_KEY_UP,              VIRTKEY, NOINVERT
+    "D",            ID_LIP_DEFAULT,         VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_LIP_SCENE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F7,          ID_MAGIC_11,            VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_F8,          ID_MAGIC_12,            VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_MULTIPLY,    ID_OPT_FG,              VIRTKEY, NOINVERT
+    "1",            ID_PREVIEW_1,           VIRTKEY, CONTROL, NOINVERT
+    "2",            ID_PREVIEW_2,           VIRTKEY, CONTROL, NOINVERT
+    "3",            ID_PREVIEW_3,           VIRTKEY, CONTROL, NOINVERT
+    "4",            ID_PREVIEW_4,           VIRTKEY, CONTROL, NOINVERT
+    "B",            ID_TOOL_BRUSH,          VIRTKEY, NOINVERT
+    "C",            ID_TOOL_CURVE,          VIRTKEY, NOINVERT
+    "E",            ID_TOOL_ERASER,         VIRTKEY, NOINVERT
+    "I",            ID_TOOL_EYEDROP,        VIRTKEY, NOINVERT
+    "K",            ID_TOOL_FILL,           VIRTKEY, NOINVERT
+    "F",            ID_TOOL_FREE,           VIRTKEY, NOINVERT
+    "H",            ID_TOOL_HAND,           VIRTKEY, NOINVERT
+    "V",            ID_TOOL_HAND,           VIRTKEY, NOINVERT
+    "L",            ID_TOOL_LINE,           VIRTKEY, NOINVERT
+    "Y",            ID_TOOL_PENCIL,         VIRTKEY, NOINVERT
+    "M",            ID_TOOL_SELECT,         VIRTKEY, NOINVERT
+    "T",            ID_TOOL_TRACE,          VIRTKEY, NOINVERT
+    "Z",            ID_TOOL_ZOOM,           VIRTKEY, NOINVERT
+    "G",            ID_VIEW_CAMERA_GRID,    VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_VIEW_FULL,           VIRTKEY, CONTROL, ALT, NOINVERT
+    "W",            ID_VIEW_VIDEO2,         VIRTKEY, CONTROL, ALT, NOINVERT
+    "0",            ID_ZOOM_100,            VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_NUMPAD0,     ID_ZOOM_100,            VIRTKEY, CONTROL, ALT, NOINVERT
+    "0",            ID_ZOOM_FIT,            VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD0,     ID_ZOOM_FIT,            VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_OPT_AUTOCOMP,        VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 34, 22, 253, 156
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FlipBook"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            3,IDC_STATIC,29,15,20,20
+    LTEXT           "DigiCel FlipBook: ",IDC_VERSION,88,10,86,8
+    LTEXT           "Copyright © 2000-2013",IDC_COPYRIGHT,88,22,126,8
+    DEFPUSHBUTTON   "OK",IDOK,53,132,71,15,WS_GROUP
+    LTEXT           "FlipBook ID",IDD_ABOUTBOX2,21,50,49,8
+    EDITTEXT        IDC_KEYCODE,72,47,82,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    CTEXT           "Demo Mode",IDC_APP_MODE,160,47,59,13,SS_CENTERIMAGE | WS_BORDER | NOT WS_GROUP
+    PUSHBUTTON      "Details",IDC_DETAILS,141,132,50,14
+    CONTROL         "",IDC_FEAT_TELECINE,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_DISABLED,38,66,9,12
+    CONTROL         "",IDC_FEAT_DESKEW,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_DISABLED,90,66,9,12
+    CONTROL         "",IDC_FEAT_HIRES,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_DISABLED,142,66,9,12
+    CONTROL         "",IDC_FEAT_COLORKEY,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_DISABLED,142,83,9,12
+    CONTROL         "",IDC_FEAT_CAMERA,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_DISABLED | WS_TABSTOP,38,84,9,12
+    LTEXT           "Telecine",IDC_STATIC,52,68,28,8
+    LTEXT           "AutoScan",IDC_STATIC,104,68,33,8
+    LTEXT           "Film Resolution",IDC_STATIC,156,68,47,8
+    LTEXT           "Color Key",IDC_STATIC,156,85,31,8
+    LTEXT           "Camera",IDC_STATIC,52,85,25,8
+    CONTROL         "",IDC_FEAT_LAYERS,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_DISABLED | WS_TABSTOP,90,83,9,12
+    LTEXT           "Effects Layers",IDC_STATIC,104,85,30,8
+    CONTROL         "",IDC_FEAT_PLUS,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_DISABLED | WS_TABSTOP,90,100,9,12
+    LTEXT           "ianimate",IDC_FEAT_PLUSX,104,102,27,8
+    CONTROL         "",IDC_FEAT_LIBRARY,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_DISABLED | WS_TABSTOP,142,100,9,12
+    LTEXT           "Library",IDC_STATIC,156,103,22,8
+    LTEXT           "Expiration Date :",IDC_APP_EXPIRES,21,116,53,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_APP_EXP_DATE,78,114,79,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+END
+
+IDD_DETAILS DIALOGEX 0, 0, 214, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "System Details"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,127,50,14
+    LTEXT           "Total RAM:",IDC_STATIC,25,58,80,8
+    LTEXT           "Operating System:",IDC_STATIC,25,13,80,8
+    LTEXT           "Available RAM:",IDC_STATIC,25,73,80,8
+    LTEXT           "Total Virtual Memory:",IDC_STATIC,25,88,80,8
+    LTEXT           "Avail. Virtual Memory:",IDC_STATIC,25,103,80,8
+    EDITTEXT        IDC_ABT_OS,115,10,80,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ABT_TOTAL_RAM,115,55,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ABT_AVAIL_RAM,115,70,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ABT_TOTAL_VIRT,115,85,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ABT_AVAIL_VIRT,115,100,60,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Memory Used:",IDC_STATIC,25,43,46,8
+    EDITTEXT        IDC_ABT_LOAD,115,40,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "CPU Speed",IDC_STATIC,25,28,80,8
+    EDITTEXT        IDC_ABT_SPEED,115,25,40,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_THUMBS DIALOG  0, 0, 59, 105
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_THICKFRAME
+CAPTION "XSheet"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_THUMBS,2,6,12,83,LBS_MULTIPLESEL | LBS_OWNERDRAWVARIABLE | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_SPLASH DIALOG  0, 0, 222, 153
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_SPLASHER,"Button",BS_OWNERDRAW,0,0,222,153
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 261, 255
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "DigiCel FlipBook Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,133,232,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,232,50,14
+    CONTROL         "Using WinTab",IDC_USEWINTAB,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,20,87,71,10
+    LTEXT           "Playback Rate",IDC_STATIC,166,12,48,8
+    CONTROL         "Open Previous Scene",IDC_PREVIOUS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,66,85,10
+    CONTROL         "Left Handed Cursors",IDC_LEFTHAND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,180,81,10
+    LTEXT           "fps",IDC_STATIC,208,26,10,8
+    GROUPBOX        "Image Quality",IDC_STATIC,11,10,109,54
+    GROUPBOX        "Graphics Tablet",IDC_STATIC,11,74,106,74
+    CONTROL         "Tools Use Same Color",IDC_TOOL_COLOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,194,81,10
+    CONTROL         "Preview",IDC_BROADCAST0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,22,80,10
+    CONTROL         "Preview/Broadcast",IDC_BROADCAST1,"Button",BS_AUTORADIOBUTTON,20,36,76,10
+    CONTROL         "Broadcast",IDC_BROADCAST2,"Button",BS_AUTORADIOBUTTON,20,50,47,10
+    EDITTEXT        IDC_RATE,164,23,40,13,ES_CENTER | ES_AUTOHSCROLL | WS_GROUP
+    GROUPBOX        "Tools",IDC_STATIC,11,154,107,67
+    CONTROL         "Checker Board BG",IDC_CHECKBG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,81,79,10
+    CONTROL         "Save Video Preview",IDC_SAVE_CACHE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,96,77,10
+    CONTROL         "Simple Cursors",IDC_SIMPLE_CURSOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,166,78,10
+    GROUPBOX        "Miscellaneous",IDC_STATIC,140,40,109,181
+    PUSHBUTTON      "Enable Don't Shows",IDC_ENABLE_SHOW,150,200,87,14
+    CONTROL         "Hard Zoom",IDC_HARD_ZOOM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,141,73,10
+    LTEXT           "Min Pressure:",IDC_STATIC,24,102,45,8
+    LTEXT           "Max Pressure:",IDC_STATIC,24,118,45,8
+    EDITTEXT        IDC_MIN_PRESSURE,74,99,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MAX_PRESSURE,73,114,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Use JPEG Cache",IDC_USE_JPEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,111,71,10
+    LTEXT           "Quality:",IDC_QUAL_TEXT,162,126,24,8
+    EDITTEXT        IDC_QUALITY,189,124,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Check Updates",IDC_CHK_UPDATES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,51,84,10
+    CONTROL         "XSheet On Top (Restart)",IDC_SHEET_TOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,156,91,10
+    CONTROL         "Primary Monitor Only",IDC_TABLET_PRIMARY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,131,80,10
+    CONTROL         "Left Scroll Bars",IDC_LEFT_SCROLL,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,151,187,63,10
+    CONTROL         "Enable Basic Lip Sync",IDC_USE_MOUTHS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,172,87,10
+    CONTROL         "Edit Scrub Frame",IDC_SCRUB_EDIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,208,80,10
+END
+
+IDD_AVIINDLG DIALOGEX 0, 0, 259, 209
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Import AVI Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Import",IDOK,197,182,50,14
+    PUSHBUTTON      "Done",IDCANCEL,115,182,50,14
+    EDITTEXT        IDC_AVIINSTART,196,27,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AVIINSTOP,196,43,40,13,ES_AUTOHSCROLL
+    LTEXT           "Starting Frame",IDC_STATIC,144,29,46,8
+    LTEXT           "Ending Frame",IDC_STATIC,144,45,44,8
+    EDITTEXT        IDC_START_LEVEL,73,42,40,13,ES_AUTOHSCROLL
+    LTEXT           "Level",IDC_STATIC,24,45,18,8
+    LTEXT           "Starting Frame",IDC_STATIC,23,29,48,8
+    EDITTEXT        IDC_START_FRAME,73,26,40,13,ES_AUTOHSCROLL
+    GROUPBOX        "AVI File",IDC_INAVI_FILE,135,10,110,55
+    GROUPBOX        "Xsheet",IDC_STATIC,13,10,110,55
+    CONTROL         "None",IDC_AVI_TRACK0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,37,159,33,10
+    CONTROL         "Track 1",IDC_AVI_TRACK1,"Button",BS_AUTORADIOBUTTON,77,159,41,10
+    CONTROL         "Track 2",IDC_AVI_TRACK2,"Button",BS_AUTORADIOBUTTON,123,159,41,10
+    CONTROL         "Track 3",IDC_AVI_TRACK3,"Button",BS_AUTORADIOBUTTON,169,159,41,10
+    GROUPBOX        "Frame Rates Match",IDC_AVI_TEMPORAL,13,68,232,26,WS_DISABLED
+    CONTROL         "Adjust Rate",IDC_AVI_RATE_ADJ,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,25,80,198,10
+    GROUPBOX        "Frame Sizes Match",IDC_AVI_SPATIAL,12,101,233,44,WS_DISABLED
+    CONTROL         "Scale It",IDC_AVI_SCALE_IT,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,27,114,182,10
+    CONTROL         "Hold Aspect",IDC_AVI_ASPECT_HOLD,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,27,128,55,10
+    GROUPBOX        "Audio Present",IDC_AVI_AUDIO,13,149,232,28
+END
+
+IDD_TOOL_RAD DIALOGEX 0, 0, 176, 30
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RAD_DN,"Button",BS_OWNERDRAW | WS_DISABLED,0,0,16,16
+    CONTROL         "",IDC_RAD_UP,"Button",BS_OWNERDRAW | WS_DISABLED,56,0,16,16
+    CONTROL         "",IDC_RAD,"Button",BS_OWNERDRAW | WS_DISABLED,16,0,40,16
+    LTEXT           "Size",IDC_STATIC,6,18,26,8
+    LTEXT           "Static",IDC_RAD_VAL,36,18,19,8
+    CONTROL         "Anti-Aliased",IDC_RAD_ANTI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,4,52,10
+END
+
+IDD_TOOL_FILL DIALOGEX 0, 0, 176, 30
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Fill Tool Attributes"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_FILL_SCROLL,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,23,8,137,11
+    CONTROL         "",IDC_FILL_CHECK,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,6,8,11,10
+END
+
+IDD_TOOL_ZOOM DIALOGEX 0, 0, 160, 30
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Zoom Attributes"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_TOOL_SELECT DIALOGEX 0, 0, 198, 30
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Select Attributes"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Persist",IDC_SELECT_STAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,10,37,10
+    CONTROL         "Auto Advance",IDC_SELECT_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,53,10,61,10
+    CONTROL         "Lasso",IDC_SELECT_LASSO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,10,35,10
+END
+
+IDD_TOOL_RADDEN DIALOGEX 0, 0, 161, 116
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Tool Attributes"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RAD_DN,"Button",BS_OWNERDRAW | WS_DISABLED,0,0,16,16
+    CONTROL         "",IDC_RAD_UP,"Button",BS_OWNERDRAW | WS_DISABLED,56,0,16,16
+    CONTROL         "",IDC_RAD,"Button",BS_OWNERDRAW | WS_DISABLED,16,0,40,16
+    CONTROL         "",IDC_DEN_DN,"Button",BS_OWNERDRAW | WS_DISABLED,73,0,16,16
+    CONTROL         "",IDC_DEN,"Button",BS_OWNERDRAW | WS_DISABLED,89,0,40,16
+    CONTROL         "",IDC_DEN_UP,"Button",BS_OWNERDRAW | WS_DISABLED,129,0,16,16
+    LTEXT           "Size",IDC_STATIC,6,18,26,8
+    LTEXT           "Density:",IDC_STATIC,68,18,29,8
+    LTEXT           "Static",IDC_RAD_VAL,36,18,19,8
+    LTEXT           "Static",IDC_DEN_VAL,97,18,19,8
+    CONTROL         "Free",IDC_PEN_FREE,"Button",BS_AUTORADIOBUTTON,4,30,27,10
+    CONTROL         "Line",IDC_PEN_LINE,"Button",BS_AUTORADIOBUTTON,34,30,26,10
+    CONTROL         "Rect",IDC_PEN_RECT,"Button",BS_AUTORADIOBUTTON,64,30,27,10
+    CONTROL         "Ellipse",IDC_PEN_ELLIPSE,"Button",BS_AUTORADIOBUTTON,97,30,32,10
+    CONTROL         "Curve",IDC_PEN_CURVE,"Button",BS_AUTORADIOBUTTON,39,45,31,10
+    CONTROL         "Smart",IDC_PEN_SMART,"Button",BS_AUTORADIOBUTTON,87,45,34,10
+    CONTROL         "Radius",IDC_PEN_TAB_RAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,70,38,10
+    CONTROL         "Density",IDC_PEN_TAB_DEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,87,70,39,10
+    GROUPBOX        "Tablet Pressure Affects",IDC_STATIC,11,59,122,24
+    CONTROL         "None",IDC_DEN_TEXT0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,6,101,33,10
+    CONTROL         "T2",IDC_DEN_TEXT2,"Button",BS_AUTORADIOBUTTON,82,101,25,10
+    CONTROL         "T1",IDC_DEN_TEXT1,"Button",BS_AUTORADIOBUTTON,44,101,25,10
+    CONTROL         "T3",IDC_DEN_TEXT3,"Button",BS_AUTORADIOBUTTON,118,101,25,10
+    CONTROL         "Anti-Aliased",IDC_RAD_ANTI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,86,67,10
+END
+
+IDD_TOOL_NUPEN DIALOGEX 0, 0, 231, 208
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Tool Attributes"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Free",IDC_PEN_FREE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,130,27,10
+    CONTROL         "Line",IDC_PEN_LINE,"Button",BS_AUTORADIOBUTTON,41,130,26,10
+    CONTROL         "Rect",IDC_PEN_RECT,"Button",BS_AUTORADIOBUTTON,75,130,27,10
+    CONTROL         "Ellipse",IDC_PEN_ELLIPSE,"Button",BS_AUTORADIOBUTTON,109,130,32,10
+    CONTROL         "Curve",IDC_PEN_CURVE,"Button",BS_AUTORADIOBUTTON,148,130,31,10
+    CONTROL         "Smart",IDC_PEN_SMART,"Button",BS_AUTORADIOBUTTON,184,130,34,10
+    CONTROL         "Radius",IDC_PEN_TAB_RAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,158,38,10
+    CONTROL         "Density",IDC_PEN_TAB_DEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,87,158,39,10
+    GROUPBOX        "Tablet Pressure Affects",IDC_STATIC,11,147,122,24
+    CONTROL         "None",IDC_DEN_TEXT0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,14,189,33,10
+    CONTROL         "T2",IDC_DEN_TEXT2,"Button",BS_AUTORADIOBUTTON,90,189,25,10
+    CONTROL         "T1",IDC_DEN_TEXT1,"Button",BS_AUTORADIOBUTTON,52,189,25,10
+    CONTROL         "T3",IDC_DEN_TEXT3,"Button",BS_AUTORADIOBUTTON,126,189,25,10
+    CONTROL         "",IDC_PEN_RAD,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,38,50,100,13
+    LTEXT           "Size",IDC_STATIC,11,51,14,8
+    LTEXT           "Density",IDC_STATIC,11,71,24,8
+    LTEXT           "Halo",IDC_STATIC,11,91,16,8
+    CONTROL         "",IDC_PEN_DEN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,38,70,100,13
+    CONTROL         "",IDC_PEN_HALO,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,38,90,100,13
+    EDITTEXT        IDC_PEN_RAD_TXT,153,49,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PEN_DEN_TXT,153,69,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PEN_HALO_TXT,153,89,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Ramp 0",IDC_PEN_RAMP0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,109,41,10
+    CONTROL         "Ramp 1",IDC_PEN_RAMP1,"Button",BS_AUTORADIOBUTTON,71,109,41,10
+    CONTROL         "Ramp 2",IDC_PEN_RAMP2,"Button",BS_AUTORADIOBUTTON,121,109,41,10
+    CONTROL         "Ramp 3",IDC_PEN_RAMP3,"Button",BS_AUTORADIOBUTTON,169,109,41,10
+END
+
+IDD_NEW DIALOGEX 0, 0, 398, 234
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "New Scene"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Width",IDC_STATIC,54,101,20,8
+    EDITTEXT        IDC_NEW_WIDTH,82,98,35,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEW_HEIGHT,82,120,35,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEW_FRAMES,206,113,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Height",IDC_STATIC,54,122,22,8
+    LTEXT           "# of Frames",IDC_STATIC,164,115,38,8
+    LTEXT           "# of Levels",IDC_STATIC,164,91,36,8
+    EDITTEXT        IDC_NEW_LEVELS,206,88,40,14,ES_CENTER | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,172,205,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,53,205,50,14
+    LTEXT           "Frame Rate",IDC_STATIC,165,31,38,8
+    EDITTEXT        IDC_NEW_RATE,207,28,40,14,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "Screen Size",IDC_STATIC,21,5,120,134
+    CONTROL         "Quarter    (320 X 240)",IDC_NEW_QTR,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,39,21,84,10
+    CONTROL         "Standard (640 X 480)",IDC_NEW_FULL,"Button",BS_AUTORADIOBUTTON,39,37,83,10
+    CONTROL         "PAL         (768 X 576)",IDC_NEW_PAL,"Button",BS_AUTORADIOBUTTON,39,69,84,10
+    CONTROL         "NTSC      (720 X 540)",IDC_NEW_NTSC540,"Button",BS_AUTORADIOBUTTON,39,53,84,10
+    CONTROL         "Custom",IDC_NEW_CUST,"Button",BS_AUTORADIOBUTTON,39,85,39,10
+    CONTROL         "100%  (default)",IDC_NEW_FACT_100,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,33,168,63,10
+    CONTROL         "150%",IDC_NEW_FACT_150,"Button",BS_AUTORADIOBUTTON,101,168,33,10
+    CONTROL         "200%",IDC_NEW_FACT_200,"Button",BS_AUTORADIOBUTTON,139,168,33,10
+    CONTROL         "250%",IDC_NEW_FACT_250,"Button",BS_AUTORADIOBUTTON,177,168,33,10
+    CONTROL         "300%",IDC_NEW_FACT_300,"Button",BS_AUTORADIOBUTTON,215,168,33,10
+    GROUPBOX        "OverScan",IDC_STATIC,21,150,242,40
+    GROUPBOX        "XSheet",IDC_STATIC,153,68,110,71
+    GROUPBOX        "Playback Speed",IDC_STATIC,153,5,110,52
+    CONTROL         "Preview 1 Best",IDC_NEW_PREV1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,286,88,63,10
+    CONTROL         "Preview 2",IDC_NEW_PREV2,"Button",BS_AUTORADIOBUTTON,286,103,47,10
+    CONTROL         "Preview 3",IDC_NEW_PREV3,"Button",BS_AUTORADIOBUTTON,286,118,47,10
+    CONTROL         "Preview 4 Fastest",IDC_NEW_PREV4,"Button",BS_AUTORADIOBUTTON,286,133,72,10
+    GROUPBOX        "Playback Cache",IDC_STATIC,276,150,98,40
+    CONTROL         "Use JPEG",IDC_NEW_JPEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,287,163,49,10
+    LTEXT           "Quality:",IDC_NEW_QUALTEXT,290,177,24,8
+    EDITTEXT        IDC_NEW_QUALITY,322,173,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Preview / Export Quality",IDC_STATIC,276,5,98,65
+    CONTROL         "Preview",IDC_BROADCAST0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,286,56,40,10
+    CONTROL         "Preview / Broadcast",IDC_BROADCAST1,"Button",BS_AUTORADIOBUTTON,286,40,82,10
+    CONTROL         "Broadcast",IDC_BROADCAST2,"Button",BS_AUTORADIOBUTTON,286,24,53,10
+    GROUPBOX        "Preview Quality vs. Speed",IDC_STATIC,276,75,98,71
+    PUSHBUTTON      "From AVI",IDC_FROM_AVI,280,205,50,14
+END
+
+IDD_FROM_AVI DIALOGEX 0, 0, 357, 153
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Scene From AVI"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Width",IDC_STATIC,31,19,20,8
+    EDITTEXT        IDC_NEW_WIDTH,59,16,35,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEW_HEIGHT,59,38,35,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEW_FRAMES,170,64,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Height",IDC_STATIC,31,40,22,8
+    LTEXT           "# of Frames",IDC_STATIC,128,66,38,8
+    LTEXT           "# of Levels",IDC_STATIC,128,42,36,8
+    EDITTEXT        IDC_NEW_LEVELS,170,39,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "OK",IDOK,201,123,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,82,123,50,14
+    LTEXT           "Frame Rate",IDC_STATIC,128,16,38,8
+    EDITTEXT        IDC_NEW_RATE,170,13,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Playback Cache",IDC_STATIC,239,15,100,40
+    CONTROL         "Use JPEG",IDC_NEW_JPEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,250,28,49,10
+    LTEXT           "Quality:",IDC_NEW_QUALTEXT,253,42,24,8
+    EDITTEXT        IDC_NEW_QUALITY,291,38,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Include Sound",IDC_USE_SOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,65,62,10
+    LTEXT           "static",IDC_AVI_MSG1,31,86,284,8
+    LTEXT           "Static",IDC_AVI_MSG2,31,104,300,8
+END
+
+IDD_OLD_NEW DIALOG  0, 0, 302, 243
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "New Scene"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Width",IDC_STATIC,65,106,20,8
+    EDITTEXT        IDC_NEW_WIDTH,93,103,35,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEW_HEIGHT,93,125,35,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEW_FRAMES,217,118,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Height",IDC_STATIC,65,127,22,8
+    LTEXT           "# of Frames",IDC_STATIC,175,120,38,8
+    LTEXT           "# of Levels",IDC_STATIC,175,96,36,8
+    EDITTEXT        IDC_NEW_LEVELS,217,93,40,14,ES_CENTER | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,183,203,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,64,203,50,14
+    EDITTEXT        IDC_NAME,42,222,31,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Name:",IDC_STATIC,27,228,8,8,NOT WS_VISIBLE
+    PUSHBUTTON      "Location",IDC_CHANGE,78,222,6,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_LOCATION,88,222,32,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Frame Rate",IDC_STATIC,176,36,38,8
+    EDITTEXT        IDC_NEW_RATE,218,33,40,14,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "Screen Size",IDC_STATIC,32,10,120,134
+    CONTROL         "Quarter    (320 X 240)",IDC_NEW_QTR,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,50,26,84,10
+    CONTROL         "Standard (640 X 480)",IDC_NEW_FULL,"Button",BS_AUTORADIOBUTTON,50,42,83,10
+    CONTROL         "NTSC (720 X 480)",IDC_NEW_NTSC,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,171,0,8,10
+    CONTROL         "PAL         (768 X 576)",IDC_NEW_PAL,"Button",BS_AUTORADIOBUTTON,50,71,84,10
+    CONTROL         "HDTV",IDC_NEW_HDTV,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,191,0,8,10
+    CONTROL         "NTSC      (720 X 540)",IDC_NEW_NTSC540,"Button",BS_AUTORADIOBUTTON,50,57,84,10
+    CONTROL         "PAL (720 X 576)",IDC_NEW_PAL720,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,211,0,8,10
+    CONTROL         "Custom",IDC_NEW_CUST,"Button",BS_AUTORADIOBUTTON,50,87,39,10
+    CONTROL         "Storyboard",IDC_NEW_STORY,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP,231,0,8,10
+    CONTROL         "Xsheet",IDC_NEW_XSHEET,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,251,0,8,10
+    LTEXT           "# of Frames",IDC_STATIC,181,228,8,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_NEW_SFRAMES,195,222,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Frame Rate",IDC_STATIC,125,228,8,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_NEW_SRATE,137,222,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "100%  (default)",IDC_NEW_FACT_100,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,44,170,63,10
+    CONTROL         "150%",IDC_NEW_FACT_150,"Button",BS_AUTORADIOBUTTON,112,170,33,10
+    CONTROL         "200%",IDC_NEW_FACT_200,"Button",BS_AUTORADIOBUTTON,150,170,33,10
+    CONTROL         "250%",IDC_NEW_FACT_250,"Button",BS_AUTORADIOBUTTON,188,170,33,10
+    CONTROL         "300%",IDC_NEW_FACT_300,"Button",BS_AUTORADIOBUTTON,226,170,33,10
+    GROUPBOX        "OverScan",IDC_STATIC,32,155,242,32
+    GROUPBOX        "XSheet",IDC_STATIC,164,73,110,71
+    GROUPBOX        "Playback Speed",IDC_STATIC,164,10,110,52
+END
+
+IDD_FILEOPENPREVIEW DIALOGEX 0, 0, 125, 133
+STYLE DS_SETFONT | DS_3DLOOK | DS_NOFAILCREATE | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "",1119,0,0,124,9,NOT WS_VISIBLE
+    CONTROL         "&Preview",IDC_PREVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,113,45,10
+    CONTROL         "",IDC_IMAGE,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_SUNKEN,4,20,85,85,WS_EX_NOPARENTNOTIFY | WS_EX_CLIENTEDGE
+END
+
+IDD_COLORDIALOG DIALOG  2, 0, 196, 198
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Color"
+FONT 8, "Helv"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,4,181,44,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,52,180,44,14,WS_GROUP
+    PUSHBUTTON      "&Help",1038,100,180,44,14,WS_GROUP
+    CONTROL         "",COLOR_RAINBOW,"Static",SS_SIMPLE | SS_SUNKEN,7,4,118,116
+    CONTROL         "",COLOR_LUMSCROLL,"Static",SS_SIMPLE | SS_SUNKEN,135,4,8,116
+    CONTROL         "",COLOR_CURRENT,"Static",SS_SIMPLE | SS_SUNKEN,7,124,40,14
+    PUSHBUTTON      "&o",COLOR_SOLID,190,200,6,14,WS_GROUP
+    RTEXT           "Color",COLOR_SOLID_LEFT,7,141,20,9
+    LTEXT           "|S&olid",COLOR_SOLID_RIGHT,27,141,20,9
+    RTEXT           "Hu&e:",COLOR_HUEACCEL,59,126,20,9
+    EDITTEXT        COLOR_HUE,83,124,18,12,WS_GROUP
+    RTEXT           "&Sat:",COLOR_SATACCEL,57,140,20,9
+    EDITTEXT        COLOR_SAT,83,138,18,12,WS_GROUP
+    RTEXT           "&Lum:",COLOR_LUMACCEL,57,154,20,9
+    EDITTEXT        COLOR_LUM,83,152,18,12,WS_GROUP
+    RTEXT           "&Red:",COLOR_REDACCEL,104,126,24,9
+    EDITTEXT        COLOR_RED,132,124,18,12,WS_GROUP
+    RTEXT           "&Green:",COLOR_GREENACCEL,104,140,24,9
+    EDITTEXT        COLOR_GREEN,132,138,18,12,WS_GROUP
+    RTEXT           "Bl&ue:",COLOR_BLUEACCEL,104,154,24,9
+    EDITTEXT        COLOR_BLUE,132,152,18,12,WS_GROUP
+    RTEXT           "O&pacity:",COLOR_ALPHAACCEL,43,167,35,9
+    EDITTEXT        COLOR_ALPHA,83,165,18,12,WS_GROUP
+    PUSHBUTTON      "Type",IDC_COLOR_TYPE,9,151,40,14,NOT WS_VISIBLE
+END
+
+IDD_FILEIMPORT DIALOGEX 0, 0, 382, 122
+STYLE DS_SETFONT | DS_3DLOOK | DS_NOFAILCREATE | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "&Preview",IDC_PREVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,303,103,40,10
+    CONTROL         "",IDC_IMAGE,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_SUNKEN,274,14,85,85,WS_EX_NOPARENTNOTIFY | WS_EX_CLIENTEDGE
+    LTEXT           "Frame",IDC_STATIC,119,17,20,8
+    LTEXT           "Level",IDC_STATIC,119,33,18,8
+    LTEXT           "Hold",IDC_STATIC,119,49,16,8
+    EDITTEXT        IDC_FRAME,150,15,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEVEL,150,32,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLD,150,48,40,14,ES_AUTOHSCROLL
+    LTEXT           "",1119,2,3,370,9
+    CONTROL         "None",IDC_IMP_ROT0,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,217,25,33,10
+    CONTROL         "90",IDC_IMP_ROT90,"Button",BS_AUTORADIOBUTTON,217,38,24,10
+    CONTROL         "180",IDC_IMP_ROT180,"Button",BS_AUTORADIOBUTTON,217,51,28,10
+    CONTROL         "270",IDC_IMP_ROT270,"Button",BS_AUTORADIOBUTTON,217,64,28,10
+    GROUPBOX        "Rotation",IDC_STATIC,208,14,48,65
+    CONTROL         " Overlay",IDC_IMP_24,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,190,106,42,10
+    LTEXT           "Label",IDC_STATIC,119,66,18,8
+    EDITTEXT        IDC_LABEL,149,63,40,14,ES_AUTOHSCROLL
+    CONTROL         " Make White Transparent  When It Is Brighter Than:",IDC_KEYING,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,119,83,92,17
+    EDITTEXT        IDC_ALPHA_KEY,221,84,27,15,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         " Scale to Fit ",IDC_SCALE_BG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,119,105,52,10
+    CONTROL         "Import as Line Drawing",IDC_IMP_DRAWING,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,9,18,98,36
+    CONTROL         "Import as Color Overlay",IDC_IMP_COLOR,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,9,68,98,36
+END
+
+IDD_SCANSKEW DIALOGEX 0, 0, 431, 97
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scan"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDCANCEL,369,12,50,14,BS_CENTER
+    EDITTEXT        IDC_LEVEL,49,29,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_FRAME,49,9,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_HOLD,49,49,40,14,ES_AUTOHSCROLL
+    LTEXT           "Level",IDC_STATIC,12,31,33,8
+    LTEXT           "Frame",IDC_STATIC,12,11,32,8
+    LTEXT           "Hold",IDC_SCAN_TEXT,12,52,26,8
+    PUSHBUTTON      "Select",IDC_SCAN_SELECT,369,48,50,14
+    PUSHBUTTON      "Acquire",IDC_SCAN_SCAN,369,67,50,14,BS_CENTER
+    GROUPBOX        "Rotation",IDC_STATIC,101,3,63,86
+    CONTROL         "None",IDC_SCAN_ROT0,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,109,17,33,10
+    CONTROL         "90",IDC_SCAN_ROT90,"Button",BS_AUTORADIOBUTTON,109,31,24,10
+    CONTROL         "180",IDC_SCAN_ROT180,"Button",BS_AUTORADIOBUTTON,109,45,28,10
+    CONTROL         "270",IDC_SCAN_ROT270,"Button",BS_AUTORADIOBUTTON,109,59,28,10
+    CONTROL         "AutoScan",IDC_SCAN_AUTO,"Button",BS_AUTORADIOBUTTON,109,73,48,10
+    EDITTEXT        IDC_SCAN_FIELDSIZE,220,37,40,14,ES_AUTOHSCROLL
+    LTEXT           "Field Size",IDC_STATIC,182,40,31,8
+    LTEXT           "Peg Offset",IDC_STATIC,179,57,34,8
+    EDITTEXT        IDC_SCAN_OFFSET,220,54,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "View Log",IDC_SCAN_VIEWLOG,222,71,41,14,WS_DISABLED
+    PUSHBUTTON      "Clear Log",IDC_SCAN_CLEARLOG,175,71,41,14,WS_DISABLED
+    CONTROL         "Pegs On Top",IDC_SCAN_PEGSTOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,186,14,58,10
+    CONTROL         "Auto Hold",IDC_SCAN_AUTOHOLD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,283,9,51,10
+    CONTROL         "Overlay",IDC_IMP_24,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,283,51,40,10
+    LTEXT           "Label",IDC_SCAN_TEXT2,12,73,18,8
+    EDITTEXT        IDC_LABEL,49,69,40,14,ES_AUTOHSCROLL
+    CONTROL         "Keying",IDC_KEYING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,289,69,37,10
+    EDITTEXT        IDC_ALPHA_KEY,327,67,31,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Save Images",IDC_SCAN_SAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,283,23,57,10
+    CONTROL         "Scale to Fit",IDC_SCALE_BG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,26,51,10
+    CONTROL         "Scan From File",IDC_SCAN_FILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,283,37,63,10
+    GROUPBOX        "AutoScan",IDC_STATIC,168,3,103,86
+    PUSHBUTTON      "Save Settings",IDC_SAVE_SETTINGS,369,30,50,14
+END
+
+IDD_INITIAL DIALOGEX 0, 0, 333, 198
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DigiCel FlipBook 6"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Exit Program",IDCANCEL,227,136,87,14
+    PUSHBUTTON      "Create New Scene",IDC_INIT_NEW,227,12,87,14
+    PUSHBUTTON      "Open Existing Scene",IDC_INIT_OPEN,227,43,87,14
+    PUSHBUTTON      "Open Previous Scene",IDC_INIT_PREV,227,74,87,14
+    PUSHBUTTON      "Unlock/Upgrade",IDC_INIT_REGISTER,227,167,87,14
+    PUSHBUTTON      "About FlipBook",IDC_INIT_ABOUT,227,105,87,14
+    CONTROL         500,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,19,9,192,177
+END
+
+IDD_INITIAL_DISC DIALOG  0, 0, 346, 244
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " TheDISC! 5"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Exit Program",IDCANCEL,232,158,87,14
+    PUSHBUTTON      "Create New Scene",IDC_INIT_NEW,232,34,87,14
+    PUSHBUTTON      "Open Existing Scene",IDC_INIT_OPEN,232,65,87,14
+    PUSHBUTTON      "Open Previous Scene",IDC_INIT_PREV,232,96,87,14
+    PUSHBUTTON      "Unlock TheDISC!",IDC_INIT_REGISTER,232,189,87,14
+    PUSHBUTTON      "About TheDISC!",IDC_INIT_ABOUT,232,127,87,14
+    CONTROL         501,IDC_STATIC,"Static",SS_BITMAP,19,20,200,200
+END
+
+IDD_GRIDDLG DIALOG  0, 0, 336, 178
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "XSheet"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_GRID,"MFCGridCtrl",WS_BORDER | WS_TABSTOP,0,0,335,177
+END
+
+IDD_BRUSHES DIALOG  0, 0, 158, 108
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Brushes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,101,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,24,50,14
+    CONTROL         138,IDC_STATIC,"Static",SS_BITMAP,16,73,126,18
+    SCROLLBAR       IDC_BRUSHBAR,16,47,125,12
+    EDITTEXT        IDC_BRUSHEDIT,16,16,40,13,ES_CENTER | ES_AUTOHSCROLL
+END
+
+IDD_DENSITY DIALOG  0, 0, 158, 108
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pencil Darkness"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,101,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,24,50,14
+    SCROLLBAR       IDC_DENSITYBAR,16,47,100,12
+    EDITTEXT        IDC_DENSITYEDIT,16,16,33,13,ES_AUTOHSCROLL
+    CONTROL         141,IDC_STATIC,"Static",SS_BITMAP,16,73,126,18
+END
+
+IDD_CELLOVER DIALOG  0, 0, 239, 60
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Replace Cel "
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDC_YES,6,31,48,14
+    PUSHBUTTON      "Cancel",IDCANCEL,184,8,48,14
+    PUSHBUTTON      "No",IDC_NOO,64,31,48,14
+    PUSHBUTTON      "Yes To Rest",IDC_YESREST,123,31,48,14
+    LTEXT           "Frame:",IDC_STATIC,9,11,27,8
+    EDITTEXT        IDC_CELLFRM,39,8,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Level:",IDC_STATIC,91,11,20,8
+    EDITTEXT        IDC_CELLLVL,120,8,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "No to Rest",IDC_NOREST,183,31,48,14
+END
+
+IDD_PUBLISH DIALOGEX 0, 0, 300, 271
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Export Format",IDC_STATIC,15,8,277,29
+    CONTROL         "AVI",IDC_PUB_AVI,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,23,20,27,10
+    CONTROL         "MOV",IDC_PUB_MOV,"Button",BS_AUTORADIOBUTTON,97,20,32,10
+    CONTROL         "GIF",IDC_PUB_GIF,"Button",BS_AUTORADIOBUTTON,167,20,27,10
+    CONTROL         "FLV",IDC_PUB_FLV,"Button",BS_AUTORADIOBUTTON,223,20,29,10
+    PUSHBUTTON      "Exit",IDCANCEL,111,249,50,14,WS_GROUP
+    LTEXT           "Start Frame",IDC_STATIC,33,80,37,8
+    LTEXT           "End Frame",IDC_STATIC,33,96,35,8
+    LTEXT           "Start Level",IDC_STATIC,33,112,35,8
+    LTEXT           "End Level",IDC_STATIC,33,128,33,8
+    EDITTEXT        IDC_START_FRAME,83,77,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_FRAME,83,93,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_LEVEL,83,109,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_LEVEL,83,125,40,14,ES_AUTOHSCROLL
+    CONTROL         "Include Soundtrack",IDC_USE_SOUND,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,34,145,81,10
+    EDITTEXT        IDC_WIDTH,218,61,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT,218,77,40,14,ES_AUTOHSCROLL
+    LTEXT           "Width",IDC_STATIC,186,64,23,8
+    LTEXT           "Height",IDC_STATIC,186,80,25,8
+    CONTROL         "Maintain Aspect Ratio",IDC_ASPECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,176,97,85,10
+    PUSHBUTTON      "Create",IDOK,188,247,82,18
+    GROUPBOX        "Movie Contents",IDC_STATIC,16,45,122,122
+    GROUPBOX        "Screen Size",IDC_STATIC,160,45,123,67
+    PUSHBUTTON      "CODEC",IDC_CHANGE_CODEC,197,120,43,14
+    EDITTEXT        IDC_CODECNAME,163,138,117,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Telecine",IDC_TELECINE_TEXT,103,174,53,56
+    CONTROL         "Off",IDC_TELECINE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,115,187,25,10
+    CONTROL         "Odd",IDC_TELECINEODD,"Button",BS_AUTORADIOBUTTON,115,201,28,10
+    CONTROL         "Even",IDC_TELECINEEVEN,"Button",BS_AUTORADIOBUTTON,115,215,32,10
+    LTEXT           "FPS",IDC_STATIC,47,215,14,8
+    EDITTEXT        IDC_RATE,37,194,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Frame Rate",IDC_STATIC,39,179,38,8
+    CONTROL         "Select All",IDC_SELECT_ALL,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,33,60,45,10
+    GROUPBOX        "GIF Options",IDC_GIF_OPTIONS,191,170,66,68
+    CONTROL         "Gray 16",IDC_GIF_GRAY4,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,202,182,41,10
+    CONTROL         "Gray 256",IDC_GIF_GRAY8,"Button",BS_AUTORADIOBUTTON,202,194,45,10
+    CONTROL         "Color",IDC_GIF_COLOR,"Button",BS_AUTORADIOBUTTON,202,206,32,10
+    CONTROL         "Repeat",IDC_REPEAT,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,202,220,49,10
+    PUSHBUTTON      "Save Settings",IDC_SAVE_SETTINGS,27,249,65,14
+    PUSHBUTTON      "Change",IDC_PUB_FLV2,253,17,33,14
+END
+
+IDD_LEVEL DIALOGEX 0, 0, 182, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Level Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,102,150,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,19,150,50,14
+    LTEXT           "Level Name:",IDC_STATIC,30,12,41,8
+    EDITTEXT        IDC_LEVEL_NAME,78,9,72,14,ES_AUTOHSCROLL
+    CONTROL         "Use Level",IDC_LEVEL_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,41,28,48,10
+    GROUPBOX        "Palette",IDC_STATIC,20,43,143,36,BS_CENTER
+    GROUPBOX        "Model",IDC_STATIC,19,86,144,53,BS_CENTER
+    CONTROL         "Use Model",IDC_MDL_USE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,100,64,10
+    PUSHBUTTON      "Change",IDC_MDL_CHANGE,97,97,50,14
+    EDITTEXT        IDC_MDL_NAME,29,116,118,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_LEVEL_PAL,36,55,107,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_LEVEL_PRO DIALOGEX 0, 0, 184, 211
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Level Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,115,188,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,20,188,50,14
+    GROUPBOX        "Peg",IDC_STATIC,20,143,143,35,BS_CENTER
+    LTEXT           "Level Name:",IDC_STATIC,30,10,41,8
+    EDITTEXT        IDC_LEVEL_NAME,78,7,72,14,ES_AUTOHSCROLL
+    CONTROL         "Use Level",IDC_LEVEL_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,39,29,48,10
+    GROUPBOX        "Palette",IDC_STATIC,20,43,143,35,BS_CENTER
+    GROUPBOX        "Model",IDC_STATIC,20,84,143,53,BS_CENTER
+    CONTROL         "Use Model",IDC_MDL_USE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,98,64,10
+    PUSHBUTTON      "Change",IDC_MDL_CHANGE,99,96,50,14
+    EDITTEXT        IDC_MDL_NAME,29,114,118,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_LEVEL_PAL,32,55,115,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PEGS,32,156,115,49,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CELL DIALOG  0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cel Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,114,59,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,22,59,50,14
+    LTEXT           "Name:",IDC_STATIC,37,30,22,8
+    EDITTEXT        IDC_CELL_NAME,71,29,72,14,ES_AUTOHSCROLL
+END
+
+IDD_SOUND DIALOGEX 0, 0, 222, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sound Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,113,121,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,24,121,50,14
+    CONTROL         "Enable Sound",IDC_SND_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,13,64,10
+    EDITTEXT        IDC_SND_WAVE,65,29,92,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Sound File",IDC_SND_CHANGE,15,29,40,14
+    LTEXT           "Video Mark (Frame)",IDC_STATIC,14,54,79,8
+    EDITTEXT        IDC_SND_VMARK,117,50,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Audio Mark (Seconds)",IDC_STATIC,14,68,71,8
+    EDITTEXT        IDC_SND_SMARK,117,64,40,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SND_SNIP,117,78,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Frames Per Click",IDC_STATIC,14,82,71,8
+    CONTROL         "",IDC_SND_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | TBS_BOTH | WS_TABSTOP,193,7,22,118
+    LTEXT           "+10",IDC_STATIC,174,11,13,8
+    LTEXT           "-10",IDC_STATIC,174,111,11,8
+    LTEXT           "0",IDC_STATIC,175,60,8,8
+END
+
+IDD_FRAME DIALOG  0, 0, 171, 113
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Insert/Delete Frame(s) "
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,98,79,50,14
+    PUSHBUTTON      "Insert",IDC_FRM_INS,25,43,50,14
+    PUSHBUTTON      "Delete",IDC_FRM_DEL,98,43,50,14
+    PUSHBUTTON      "Append",IDC_FRM_APPEND,25,79,50,14
+    EDITTEXT        IDC_COUNT,24,15,32,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "frames",IDC_STATIC,61,18,22,8
+    EDITTEXT        IDC_FRAME,115,15,32,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "at frame:",IDC_STATIC,84,18,28,8
+END
+
+IDD_EXPORT DIALOG  0, 0, 269, 225
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export Stills"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,147,192,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,65,192,50,14
+    LTEXT           "Start Frame",IDC_STATIC,17,26,37,8
+    LTEXT           "End Frame",IDC_STATIC,17,42,35,8
+    LTEXT           "Start Level",IDC_STATIC,17,58,35,8
+    LTEXT           "End Level",IDC_STATIC,17,74,33,8
+    EDITTEXT        IDC_START_FRAME,64,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_FRAME,64,39,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_LEVEL,64,56,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_LEVEL,64,72,40,14,ES_AUTOHSCROLL
+    CONTROL         "Individual Cels  (with transparency)",IDC_EXP_CELLS,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,19,114,132,10
+    CONTROL         "Composited Frames",IDC_EXP_COMPOSITE,"Button",BS_AUTORADIOBUTTON,19,140,77,10
+    CONTROL         "Combined Cels  (with transparency)",IDC_EXP_COMBINE,
+                    "Button",BS_AUTORADIOBUTTON,19,127,133,10
+    EDITTEXT        IDC_WIDTH,186,26,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT,186,43,40,14,ES_AUTOHSCROLL
+    LTEXT           "Width",IDC_STATIC,147,27,30,8
+    LTEXT           "Height",IDC_STATIC,147,43,32,8
+    CONTROL         "Maintain Aspect Ratio",IDC_ASPECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,61,85,10
+    GROUPBOX        "Export Size",IDC_STATIC,131,11,108,85
+    GROUPBOX        "Export Range",IDC_STATIC,11,11,111,85
+    LTEXT           "File Name Prefix",IDC_PREFIX_TXT,73,171,52,8
+    EDITTEXT        IDC_PREFIX,135,168,40,14,ES_AUTOHSCROLL
+    CONTROL         "Scale BG",IDC_SCALE_BG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,76,46,10
+    GROUPBOX        "Export Type",IDC_STATIC,11,100,147,55
+    GROUPBOX        "Format",IDC_STATIC,164,100,76,55
+    COMBOBOX        IDC_EXP_COMBO,170,110,63,70,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EXTEDIT DIALOG  0, 0, 154, 131
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "External Edit Stills"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,93,100,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,17,99,50,14
+    LTEXT           "Frame",IDC_STATIC,31,10,20,8
+    LTEXT           "Level",IDC_STATIC,31,28,18,8
+    EDITTEXT        IDC_START_FRAME,63,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_LEVEL,63,25,40,14,ES_AUTOHSCROLL
+    CONTROL         "Use a 24-Bit Editor",IDC_EXT_24,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,47,89,10
+    CONTROL         "Keying",IDC_KEYING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,64,37,10
+    EDITTEXT        IDC_ALPHA_KEY,70,62,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Don't Show This Again",IDC_NOT_AGAIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,81,101,10
+END
+
+IDD_FXFILL DIALOG  0, 0, 186, 153
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Auto Fill Action"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Do It",IDOK,129,47,50,14
+    PUSHBUTTON      "Done",IDCANCEL,129,19,50,14
+    LTEXT           "Start Frame",IDC_STATIC,13,15,37,8
+    LTEXT           "End Frame",IDC_STATIC,13,31,35,8
+    LTEXT           "Level",IDC_STATIC,14,47,35,8
+    EDITTEXT        IDC_START_FRAME,63,12,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_FRAME,63,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEVEL,63,44,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Erase From",IDC_STATIC,15,75,156,46
+    CONTROL         "",IDC_PROGRESS,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,15,127,158,14
+    CONTROL         "Upper Left",IDC_NW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,86,47,10
+    CONTROL         "Upper Right",IDC_NE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,98,86,52,10
+    CONTROL         "Lower Left",IDC_SW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,104,46,10
+    CONTROL         "Lower Right",IDC_SE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,98,102,51,10
+END
+
+IDD_FXFLIP DIALOG  0, 0, 186, 153
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Auto Flip Action"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Do It",IDOK,125,47,50,14
+    PUSHBUTTON      "Done",IDCANCEL,125,19,50,14
+    LTEXT           "Start Frame",IDC_STATIC,13,15,37,8
+    LTEXT           "End Frame",IDC_STATIC,13,30,35,8
+    LTEXT           "Start Level",IDC_STATIC,13,45,35,8
+    EDITTEXT        IDC_START_FRAME,63,12,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_FRAME,63,27,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_LEVEL,63,42,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Which Flip",IDC_STATIC,15,84,156,25
+    CONTROL         "",IDC_PROGRESS,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,15,121,158,14
+    CONTROL         "Horizontal",IDC_HFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,95,47,10
+    CONTROL         "Vertical",IDC_VFLIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,98,95,52,10
+    EDITTEXT        IDC_END_LEVEL,63,57,40,14,ES_AUTOHSCROLL
+    LTEXT           "End Level",IDC_STATIC,13,60,31,8
+END
+
+IDD_FXSPECK DIALOG  0, 0, 186, 153
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Despeckle Action"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Do It",IDOK,129,47,50,14
+    PUSHBUTTON      "Done",IDCANCEL,129,19,50,14
+    LTEXT           "Start Frame",IDC_STATIC,13,15,37,8
+    LTEXT           "End Frame",IDC_STATIC,13,30,37,8
+    LTEXT           "Start Level",IDC_STATIC,13,45,37,8
+    EDITTEXT        IDC_START_FRAME,63,12,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_FRAME,63,27,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_LEVEL,63,42,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PROGRESS,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,15,120,158,14
+    EDITTEXT        IDC_END_LEVEL,63,57,40,14,ES_AUTOHSCROLL
+    LTEXT           "End Level",IDC_STATIC,13,60,37,8
+    CONTROL         "Despeckle 1",IDC_SPECK1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,22,79,56,10
+    CONTROL         "Despeckle 2",IDC_SPECK2,"Button",BS_AUTORADIOBUTTON,96,79,56,10
+    CONTROL         "Despeckle 3",IDC_SPECK3,"Button",BS_AUTORADIOBUTTON,22,95,56,10
+    CONTROL         "Despeckle 4",IDC_SPECK4,"Button",BS_AUTORADIOBUTTON,96,97,56,10
+END
+
+IDD_FXMATTE DIALOG  0, 0, 186, 172
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Auto Matte Action"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Do It",IDOK,125,43,50,14
+    PUSHBUTTON      "Done",IDCANCEL,124,17,50,14
+    LTEXT           "Start Frame",IDC_STATIC,13,15,37,8
+    LTEXT           "End Frame",IDC_STATIC,13,31,35,8
+    LTEXT           "Level",IDC_STATIC,14,47,35,8
+    EDITTEXT        IDC_START_FRAME,63,12,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_FRAME,63,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEVEL,63,44,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_PROGRESS,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,15,139,158,14
+    LTEXT           "Blur:",IDC_STATIC,16,80,14,8
+    EDITTEXT        IDC_BLUR,63,76,40,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_OFFX,63,93,40,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_OFFY,63,109,40,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "X Offset:",IDC_STATIC,15,98,25,8
+    LTEXT           "Y Offset:",IDC_STATIC,18,113,26,8
+    LTEXT           "Color:",IDC_STATIC,14,63,19,8
+    CONTROL         "Button1",IDC_COLOR,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,63,60,40,14
+    CONTROL         "Outside",IDC_OUTSIDE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,125,105,39,10
+END
+
+IDD_DGXWARNING DIALOG  0, 0, 318, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WARNING!"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "WARNING! This scene was not saved properly at the end of the last session but your changes are safe and you will continue from where you left off.",IDC_STATIC,45,15,251,23
+    LTEXT           "If you don't want to keep the changes from your previous session close the scene without saving it. ",IDC_STATIC,45,44,251,15
+    ICON            IDI_ICON1,IDC_STATIC,16,14,20,20
+    DEFPUSHBUTTON   "OK",IDOK,114,71,89,22
+END
+
+IDD_CRASHED DIALOGEX 0, 0, 318, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WARNING!"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "WARNING! It appears that FlipBook did not close properly.",IDC_STATIC,79,15,211,10
+    LTEXT           "If this happens again the configuration file may be corrupted. ",IDC_STATIC,80,29,201,11
+    ICON            IDI_ICON1,IDC_STATIC,50,14,20,20
+    DEFPUSHBUTTON   "OK",IDCANCEL,189,72,89,22
+    PUSHBUTTON      "Reset Configuration File",IDOK,7,94,87,15
+    LTEXT           "Resetting the configuration file may eliminate the problem.",IDC_STATIC,79,45,203,8
+END
+
+IDD_LIB_SAVE DIALOGEX 0, 0, 269, 225
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Libray Save"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,147,192,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,65,192,50,14
+    LTEXT           "Start Frame",IDC_STATIC,17,26,37,8
+    LTEXT           "End Frame",IDC_STATIC,17,42,35,8
+    LTEXT           "Start Level",IDC_STATIC,17,58,35,8
+    LTEXT           "End Level",IDC_STATIC,17,74,33,8
+    EDITTEXT        IDC_START_FRAME,64,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_FRAME,64,39,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_LEVEL,64,56,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_LEVEL,64,72,40,14,ES_AUTOHSCROLL
+    CONTROL         "Maintain Aspect Ratio",IDC_ASPECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,152,133,85,10
+    GROUPBOX        "Range",IDC_STATIC,11,11,111,85
+    CONTROL         "Maintain Grid Layout",IDC_GRID,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,114,107,10
+    CONTROL         "Columns:",IDC_FREEFORM,"Button",BS_AUTORADIOBUTTON,20,129,45,10
+    EDITTEXT        IDC_COLUMNS,63,127,40,14,ES_AUTOHSCROLL
+    CONTROL         "Allow Manipulation",IDC_MANIPULATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,114,75,10
+    CONTROL         "Load After Save",IDC_AUTO_LOAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,175,67,10
+    CONTROL         "Color Match",IDC_LIB_PALETTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,153,54,10
+    CONTROL         "Display Grid",IDC_LIB_GRID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,153,53,10
+    CONTROL         "Apply Name",IDC_SET_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,175,54,10
+END
+
+IDD_LIB_SETTINGS DIALOGEX 0, 0, 269, 133
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Libray Settings"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,135,101,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,101,50,14
+    CONTROL         "Maintain Aspect Ratio",IDC_ASPECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,33,85,10
+    CONTROL         "Maintain Grid Layout",IDC_GRID,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,14,107,10
+    CONTROL         "Columns:",IDC_FREEFORM,"Button",BS_AUTORADIOBUTTON,20,30,45,10
+    EDITTEXT        IDC_COLUMNS,64,29,40,14,ES_AUTOHSCROLL
+    CONTROL         "Allow Manipulation",IDC_MANIPULATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,14,75,10
+    CONTROL         "Match Palette",IDC_LIB_PALETTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,52,60,10
+    CONTROL         "Display Grid",IDC_LIB_GRID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,52,53,10
+    CONTROL         "Apply Name",IDC_SET_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,72,54,10
+END
+
+IDD_REPAIRED DIALOGEX 0, 0, 412, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WARNING!"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "WARNING:There was a problem with some of the data in this scene.",IDC_STATIC,53,13,239,10
+    LTEXT           "We have recovered as much as we can ",IDC_STATIC,80,29,201,11
+    ICON            IDI_ICON1,IDC_STATIC,14,6,21,20
+    DEFPUSHBUTTON   "OK",IDCANCEL,146,72,89,22
+    LTEXT           "Please let us know what you were doing when this problem occurred so we can work to prevent it in the future.",IDC_STATIC,19,47,375,8
+END
+
+IDD_REGFEEDBACK DIALOG  0, 0, 269, 97
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Congratulations!"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "You have successfully unlocked your copy of FlipBook.",IDD_REGFEEDBACK,62,19,175,8
+    ICON            IDI_ICON2,IDC_STATIC,22,14,21,20
+    DEFPUSHBUTTON   "OK",IDOK,91,46,89,22
+END
+
+IDD_REPLACE DIALOG  0, 0, 220, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Replace Cel(s)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,43,74,50,14
+    PUSHBUTTON      "No",IDCANCEL,135,74,50,14
+    LTEXT           "Replace All Cels in the Follwing Region ?",IDC_STATIC,15,14,152,8
+    LTEXT           "Starting Frame:",IDC_STATIC,17,32,48,8
+    LTEXT           "Ending Frame:",IDC_STATIC,17,48,46,8
+    EDITTEXT        IDC_START_FRAME,67,29,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_END_FRAME,67,45,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_START_LEVEL,167,29,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_END_LEVEL,167,45,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Starting Level",IDC_STATIC,119,32,44,8
+    LTEXT           "Ending Level",IDC_STATIC,119,48,42,8
+END
+
+IDD_CUT_CELLS DIALOG  0, 0, 220, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cut Cel(s)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,43,74,50,14
+    PUSHBUTTON      "No",IDCANCEL,135,74,50,14
+    LTEXT           "Cut All Cels in the Follwing Region ?",IDC_STATIC,15,14,152,8
+    LTEXT           "Starting Frame:",IDC_STATIC,17,32,48,8
+    LTEXT           "Ending Frame:",IDC_STATIC,17,48,46,8
+    EDITTEXT        IDC_START_FRAME,67,29,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_END_FRAME,67,45,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_START_LEVEL,167,29,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_END_LEVEL,167,45,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Starting Level",IDC_STATIC,119,32,44,8
+    LTEXT           "Ending Level",IDC_STATIC,119,48,42,8
+END
+
+IDD_DEL_CELLS DIALOG  0, 0, 220, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Delete Cel(s)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,43,74,50,14
+    PUSHBUTTON      "No",IDCANCEL,135,74,50,14
+    LTEXT           "Delete All Cels in the Follwing Region ?",IDC_STATIC,15,14,152,8
+    LTEXT           "Starting Frame:",IDC_STATIC,17,32,48,8
+    LTEXT           "Ending Frame:",IDC_STATIC,17,48,46,8
+    EDITTEXT        IDC_START_FRAME,67,29,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_END_FRAME,67,45,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_START_LEVEL,167,29,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_END_LEVEL,167,45,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Starting Level",IDC_STATIC,119,32,44,8
+    LTEXT           "Ending Level",IDC_STATIC,119,48,42,8
+END
+
+IDD_KEEP_LINK1 DIALOG  0, 0, 186, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Keep Link"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "No - Break the Link",IDNO,42,70,107,14
+    PUSHBUTTON      "Undo Changes",IDIGNORE,70,94,53,14
+    PUSHBUTTON      "Yes - Keep Copies Linked",IDYES,42,44,107,14
+    CTEXT           "This Cel is used more than once.",IDC_STATIC,32,7,125,8
+    CTEXT           "Do you want to update all copies?",IDC_STATIC,26,23,138,8
+END
+
+IDD_KEEP_LINK2 DIALOG  0, 0, 186, 138
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Keep Link"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "No - Break the Link",IDNO,24,66,140,14
+    PUSHBUTTON      "Undo Changes - Keep the Link",IDIGNORE,22,91,140,14
+    PUSHBUTTON      "Yes - Keep Copies Linked",IDYES,23,41,140,14
+    CTEXT           "This Cel is used more than once.",IDC_STATIC,28,12,123,8
+    CTEXT           "Do you want to update all copies?",IDC_STATIC,21,25,138,8
+    PUSHBUTTON      "Cancel",IDCANCEL,69,116,38,14
+END
+
+IDD_DEMO DIALOGEX 0, 0, 232, 356
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " "
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Try it",IDC_TRY_IT,33,280,48,14
+    CTEXT           "Scenes created in the trial mode will contain a permanent watermark. After you purchase and unlock FlipBook you will be able to create scenes without the watermark.",IDC_STATIC,22,248,187,26
+    DEFPUSHBUTTON   "Unlock it",IDOK,121,314,49,14
+    PUSHBUTTON      "Buy it",IDC_BUY_IT,33,300,48,14
+    PUSHBUTTON      "Cancel",IDCANCEL,33,319,50,14
+    CONTROL         500,IDC_STATIC,"Static",SS_BITMAP,16,39,200,200
+    GROUPBOX        "",IDC_STATIC,102,275,89,59
+    LTEXT           "After you buy FlipBook",IDC_STATIC,110,286,72,8
+    LTEXT           "Click here to unlock it.",IDC_STATIC,110,298,71,8
+    LTEXT           "The FlipBook ID For This Computer is:",IDD_REGISTER1,49,7,146,8
+    EDITTEXT        IDC_APID,59,18,103,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DEMO_DISC DIALOG  0, 0, 243, 321
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "The DISC! 5"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Try it.",IDC_TRY_IT,44,261,48,14
+    CTEXT           "Scenes created in the trial mode will contain a permanent watermark. After you purchase and unlock The DISC! you will be able to create scenes without the watermark.",IDC_STATIC,28,225,187,27
+    DEFPUSHBUTTON   "Unlock It",IDOK,150,261,49,14
+    PUSHBUTTON      "Buy it.",IDC_BUY_IT,97,261,48,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,96,289,50,14
+    CONTROL         501,IDC_STATIC,"Static",SS_BITMAP,21,13,200,200
+END
+
+IDD_IDWARNING DIALOG  0, 0, 288, 155
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Unlocking Failed"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Trial Mode",IDCANCEL,113,93,74,14
+    CTEXT           "FlipBook was unable to verify its Key Code details.",IDD_WARNING1,57,10,203,13
+    CTEXT           "If the situation continues you will need to unlock FlipBook again.",IDD_WARNING2,57,45,203,13
+    DEFPUSHBUTTON   "Unlock",IDOK,115,66,71,14
+    CONTROL         "Don't show this again",IDC_REMIND,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,109,122,83,10
+    CTEXT           "Please restart your computer and then start FlipBook again.",IDD_WARNING3,57,27,203,13
+    ICON            IDI_ICON1,IDC_STATIC,26,20,20,20
+END
+
+IDD_REGISTER DIALOGEX 0, 0, 270, 286
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Unlock FlipBook"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,154,248,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,248,50,14
+    LTEXT           "The FlipBook ID For This Computer is:",IDD_REGISTER1,57,62,146,8
+    EDITTEXT        IDC_APID,77,75,103,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "FlipBook Code:",IDD_REGISTER2,33,221,49,8
+    EDITTEXT        IDC_CODE,91,218,137,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "1. Open the Order Confirmation email and click on Reply.",IDD_REGISTER3,24,119,199,13
+    LTEXT           "We will email you the FlipBook Code within 1 business day.",IDD_REGISTER4,33,155,193,10
+    LTEXT           "3.  Copy and Paste the FlipBook Code into the box below. ",IDD_REGISTER5,24,174,186,8
+    CTEXT           "MAKE SURE THE ID YOU SEND US COMES FROM THE COMPUTER YOU WANT TO RUN FLIPBOOK ON!",IDD_REGISTER6,51,19,188,21
+    ICON            IDI_ICON1,IDC_STATIC,23,16,20,20
+    PUSHBUTTON      "Unlock FlipBook Online",IDC_REG_IT,234,93,36,26,NOT WS_VISIBLE
+    LTEXT           "2. Copy the FlipBook ID above, paste it into the reply email and send it.",IDD_REGISTER7,24,140,224,13
+END
+
+IDD_REGISTER_DISC DIALOG  0, 0, 270, 262
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Unlock TheDISC!"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,156,215,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,215,50,14
+    LTEXT           "TheDISC! ID FOR THIS COMPUTER is:",IDC_STATIC,76,18,146,8
+    EDITTEXT        IDC_APID,87,30,103,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "TheDISC! Code:",IDC_STATIC,37,188,49,8
+    EDITTEXT        IDC_CODE,95,185,137,14,ES_AUTOHSCROLL
+    CTEXT           "1. Email TheDISC! ID along with your name and school affiliation to: unlock@animaction.com.",IDC_STATIC,61,89,160,23
+    LTEXT           "As soon as we verify your order, we will email you TheDISC! Code.",IDC_STATIC,26,152,223,10
+    LTEXT           "2.  Copy and Paste  TheDISC! Code into the box below. ",IDC_STATIC,41,168,186,8
+    CTEXT           "MAKE SURE THE ID YOU SEND US COMES FROM THE COMPUTER YOU WANT TO RUN TheDISC! ON!",IDC_STATIC,56,123,188,21
+    ICON            IDI_ICON1,IDC_STATIC,28,121,21,20
+    PUSHBUTTON      "Unlock TheDISC! Online",IDC_REG_IT,89,233,94,21,NOT WS_VISIBLE
+    CTEXT           "If the computer you want to run TheDISC! on is not connected to the internet follow the steps below.",IDC_STATIC,38,62,180,20
+END
+
+IDD_CAMERA DIALOG  0, 0, 187, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Camera Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Test",IDC_TEST,125,55,50,14
+    LTEXT           "X:",IDC_STATIC,18,33,8,8
+    LTEXT           "Y:",IDC_STATIC,75,34,8,8
+    EDITTEXT        IDC_X,27,30,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y,86,31,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PEG,106,7,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Peg:",IDC_STATIC,84,9,15,8
+    CONTROL         "Key",IDC_KEY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,14,69,28,10
+    CONTROL         "Computed",IDC_COMPUTED,"Button",BS_AUTORADIOBUTTON,55,69,47,10
+    LTEXT           "Frame:",IDC_STATIC,7,9,22,8
+    EDITTEXT        IDC_FRAME,37,7,40,14,ES_AUTOHSCROLL
+END
+
+IDD_PALETTE2 DIALOG  166, 65530, 140, 14
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_VSCROLL | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Palette"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_LIPSYNC DIALOG  166, 65530, 140, 14
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_VSCROLL | WS_SYSMENU | WS_THICKFRAME
+CAPTION "LipSync"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_MYLIB DIALOGEX 166, 65530, 140, 14
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_VSCROLL | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "MyLib"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+END
+
+IDD_PUCK DIALOGEX 166, 65530, 79, 68
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Puck"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_PUCK,"Static",SS_BLACKFRAME,5,4,64,51
+    RTEXT           "Static",IDC_PUCK_1,20,59,8,8
+    RTEXT           "Static",IDC_PUCK_2,60,59,11,8
+    LTEXT           "Size:",IDC_STATIC,4,59,16,8
+    LTEXT           "Opacity:",IDC_STATIC,33,59,24,8
+END
+
+IDD_ZOOMER DIALOGEX 166, 65530, 134, 14
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Zoomer"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Fit",IDC_ZOOM_FIT,0,0,27,14
+    PUSHBUTTON      "100 %",IDC_ZOOM_100,28,0,24,14
+    PUSHBUTTON      "Hand",IDC_ZOOM_HAND,52,0,28,14
+    PUSHBUTTON      "Zoom",IDC_ZOOM_ZOOM,79,0,23,14
+    LTEXT           "Zoomer",IDC_ZOOM_ZOOMER,104,0,32,14,SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+END
+
+IDD_SUBPALETTE DIALOG  166, 65530, 170, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Sub Palette"
+FONT 18, "MS Sans Serif"
+BEGIN
+END
+
+IDD_CAMDIALOG DIALOGEX 0, 0, 431, 86
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Camera"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDC_APPLY,390,24,34,17
+    EDITTEXT        IDC_EDIT_NS,162,14,24,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EW,162,35,24,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SC,267,14,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ROT,267,35,28,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "Peg",IDC_PEGX,"Button",BS_AUTORADIOBUTTON,10,15,29,10
+    CONTROL         "Group",IDC_GROUP,"Button",BS_AUTORADIOBUTTON | WS_GROUP,10,36,35,10
+    COMBOBOX        IDC_COMBO_GROUP,46,35,48,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PEG,46,12,48,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Change",IDC_EDIT_PEG,96,12,30,14
+    PUSHBUTTON      "Change",IDC_EDIT_GROUP,96,34,30,14
+    CONTROL         "N",IDC_ADJ_N,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP,144,14,15,10
+    CONTROL         "S",IDC_ADJ_S,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,199,14,15,10
+    CONTROL         "W",IDC_ADJ_W,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,144,35,15,10
+    CONTROL         "E",IDC_ADJ_E,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,199,35,15,10
+    CONTROL         "Zoom",IDC_ADJ_SC,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,233,14,30,12
+    CONTROL         "Rotate",IDC_ADJ_ROT,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,233,35,30,12
+    CONTROL         "Opacity",IDC_ADJ_ALPHA,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,318,14,30,12
+    CONTROL         "Blur",IDC_ADJ_BLUR,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,318,35,30,12
+    LTEXT           "X",IDC_PEG_SX,58,61,8,8
+    EDITTEXT        IDC_PEG_CX,66,59,24,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Y",IDC_PEG_SY,94,61,8,8
+    EDITTEXT        IDC_PEG_CY,102,59,24,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ALPHA,352,14,24,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "Setup",IDC_STATIC,4,4,128,75
+    GROUPBOX        "",IDC_STATIC,138,4,82,48
+    EDITTEXT        IDC_EDIT_BLUR,352,35,24,12,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "Key Options",IDC_KEY_TYPE,138,60,52,14
+    PUSHBUTTON      "Next Key",IDC_NEXTKEY,374,60,52,14
+    PUSHBUTTON      "Clear This Key",IDC_CLEARKEYS,197,60,52,14
+    PUSHBUTTON      "Clear ALL Keys",IDC_CLEARALLKEYS,256,60,52,14
+    PUSHBUTTON      "Prev Key",IDC_PREVKEY,315,60,52,14
+    GROUPBOX        "",IDC_STATIC,227,4,76,48
+    GROUPBOX        "",IDC_STATIC,310,4,73,48
+    LTEXT           "N",IDC_NS,188,16,9,8
+    LTEXT           "E",IDC_EW,188,37,9,8
+    LTEXT           "Peg Center",IDC_STATIC,11,61,39,8
+END
+
+IDD_GROUP DIALOG  0, 0, 187, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Group"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,35,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,36,50,14
+    LTEXT           "Name:",IDC_STATIC,41,17,21,8
+    EDITTEXT        IDC_GROUP_NAME,69,14,68,14,ES_AUTOHSCROLL
+END
+
+IDD_PEG DIALOG  0, 0, 187, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Peg"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PEG_NAME,75,15,47,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PEG_GROUP,75,36,48,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Smooth Pans for TV",IDC_PEG_FIELDCOMP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,46,56,89,10
+    DEFPUSHBUTTON   "OK",IDOK,18,77,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,77,50,14
+    LTEXT           "Group",IDC_STATIC,39,38,20,8
+    LTEXT           "Name",IDC_STATIC,39,17,20,8
+END
+
+IDD_KEY_TYPE DIALOG  0, 0, 187, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Key Type"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,34,77,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,107,77,50,14
+    CONTROL         "Curved Path",IDC_KEY_SMOOTH,"Button",BS_AUTORADIOBUTTON,91,16,55,10
+    CONTROL         "Linear",IDC_KEY_LINEAR,"Button",BS_AUTORADIOBUTTON,31,16,35,10
+    LTEXT           "Ease In:",IDC_EI_TEXT,14,48,27,8
+    LTEXT           "Ease Out:",IDC_EO_TEXT,100,47,32,8
+    EDITTEXT        IDC_EASEIN,47,45,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EASEOUT,136,44,40,14,ES_AUTOHSCROLL
+END
+
+IDD_SCENE_PROP DIALOG  34, 22, 128, 164
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scene Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            3,IDC_STATIC,11,17,20,20
+    DEFPUSHBUTTON   "OK",IDOK,21,145,87,15,WS_GROUP
+    LTEXT           "Width :",IDC_STATIC,20,50,30,8
+    EDITTEXT        IDC_PROP_WIDTH,50,46,50,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Height:",IDC_STATIC,20,65,30,8
+    EDITTEXT        IDC_PROP_HEIGHT,50,61,50,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Factor:",IDC_STATIC,20,80,30,8
+    EDITTEXT        IDC_PROP_FACTOR,50,76,50,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Frames:",IDC_STATIC,20,95,30,8
+    EDITTEXT        IDC_PROP_FRAMES,50,92,50,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Levels:",IDC_STATIC,20,112,30,8
+    EDITTEXT        IDC_PROP_LEVELS,50,108,50,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PROP_ID,50,124,50,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Creator:",IDC_STATIC,21,129,24,8
+END
+
+IDD_VIEWLOG DIALOG  0, 0, 469, 173
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Log Contents"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Continue",IDCANCEL,412,152,50,14
+    EDITTEXT        IDC_TXTLOG,7,7,439,137,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_PRINTING DIALOG  0, 0, 186, 223
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Printing"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Single Cel",IDC_PRINT_CEL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,10,53,10
+    CONTROL         "Composited Frame",IDC_PRINT_FRAME,"Button",BS_AUTORADIOBUTTON,15,25,77,10
+    CONTROL         "XSheet",IDC_PRINT_XSHEET,"Button",BS_AUTORADIOBUTTON,15,40,105,10
+    CONTROL         "Single Page",IDC_PRINT_SINGLE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,35,65,54,10
+    CONTROL         "Levels per Page",IDC_PRINT_LEVELS,"Button",BS_AUTORADIOBUTTON,35,80,73,10
+    CONTROL         "Frames per Page",IDC_PRINT_FRAMES,"Button",BS_AUTORADIOBUTTON,35,95,65,10
+    CONTROL         "Over, then Down",IDC_PRINT_OVER,"Button",BS_AUTORADIOBUTTON | WS_GROUP,52,120,70,10
+    CONTROL         "Down, then Over",IDC_PRINT_DOWN,"Button",BS_AUTORADIOBUTTON,52,135,70,10
+    EDITTEXT        IDC_PRINT_LEVEL_CNT,111,77,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PRINT_FRAME_CNT,111,92,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Direction",IDC_STATIC,47,110,96,42
+    GROUPBOX        "Fitting",IDC_STATIC,30,55,128,55
+    DEFPUSHBUTTON   "Print Preview",IDC_PRINT_PREVIEW,32,175,120,14
+    PUSHBUTTON      "Print",IDC_PRINT_PRINT,32,155,120,14
+    PUSHBUTTON      "Print Setup",IDC_PRINT_SETUP,32,195,120,14
+    CONTROL         "Reg Marks",IDC_PRINT_MARKS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,112,13,49,10
+END
+
+IDD_NUCAP_DIALOG DIALOGEX 0, 0, 434, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Video Capture"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Gray Scale",IDC_CAP_GRAY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,176,9,51,10
+    CONTROL         "Color",IDC_CAP_KEYED,"Button",BS_AUTORADIOBUTTON,117,9,32,10
+    PUSHBUTTON      "Color Key Settings",IDC_CAP_KEY_OPT,111,28,45,38,BS_MULTILINE | WS_GROUP
+    CONTROL         "Slider1",IDC_CAP_WHTSLIDE,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,173,52,100,13
+    CONTROL         "Slider1",IDC_CAP_GAMSLIDE,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,173,76,100,13
+    LTEXT           "White",IDC_CAP_WHT_TXT,193,43,20,8
+    EDITTEXT        IDC_CAP_GAMMA,239,64,29,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Gamma",IDC_CAP_GAM_TXT,197,66,25,8
+    EDITTEXT        IDC_CAP_WHITE,241,40,28,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "Device ?",IDC_CAP_DEVICE,23,18,59,8
+    CTEXT           "W X H",IDC_CAP_RES,29,29,40,8
+    DEFPUSHBUTTON   "Exit",IDOK,369,71,42,13
+    PUSHBUTTON      "Save Settings",IDC_CAP_SAVE,25,75,55,16
+    LTEXT           "Frame",IDC_STATIC,289,21,20,8
+    LTEXT           "Level",IDC_STATIC,289,41,18,8
+    LTEXT           "Hold",IDC_STATIC,289,60,16,8
+    DEFPUSHBUTTON   "Capture",IDC_CAP_CAPTURE,365,13,50,39
+    GROUPBOX        "Position and Label",IDC_STATIC,281,2,76,93
+    EDITTEXT        IDC_FRAME,315,17,32,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LEVEL,315,36,32,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLD,315,55,32,16,ES_AUTOHSCROLL
+    LTEXT           "Label",IDC_STATIC,289,78,18,8
+    EDITTEXT        IDC_LABEL,315,74,32,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "Settings",IDC_CAP_OPTIONS,25,51,55,16
+    CONTROL         "Onion Skin",IDC_CAP_PREVIOUS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,80,51,10
+    GROUPBOX        "Camera / Resolution",IDC_STATIC,9,6,87,36
+    CONTROL         "Auto Exposure",IDC_CAP_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,176,28,72,10
+END
+
+IDD_DV_DIALOG DIALOG  0, 0, 263, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DV Frame Size"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,197,51,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,197,25,50,14
+    GROUPBOX        "Select Frame Size",IDC_STATIC,15,7,174,75
+    CONTROL         "&Full (NTSC: 720 X 480, PAL: 720 X 576",IDC_720x480,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,20,21,140,10
+    CONTROL         "&Half (NTSC: 360 X 240, PAL: 360 X 288",IDC_360x240,
+                    "Button",BS_AUTORADIOBUTTON,20,36,140,10
+    CONTROL         "&Quarter (NTSC: 180 X 120, PAL: 180 X 144",IDC_180x120,
+                    "Button",BS_AUTORADIOBUTTON,20,51,159,10
+    CONTROL         "&DC (NTSC: 88 X 60, PAL: 88 X 76",IDC_88x60,"Button",BS_AUTORADIOBUTTON,20,66,120,10
+END
+
+IDD_GRAB_DLG DIALOG  0, 0, 187, 40
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Grabbing Video Frame"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,62,13,50,14
+END
+
+IDD_LAYER DIALOGEX 0, 0, 289, 246
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Layer Control"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,221,183,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,221,204,50,14
+    LISTBOX         IDC_LAYER,20,27,254,111,LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Name:",IDC_STATIC,22,145,21,8
+    EDITTEXT        IDC_LAY_NAME,57,142,40,14,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "Display",IDC_LAY_DISPLAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,179,38,10
+    CONTROL         "Composite",IDC_LAY_ACTIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,194,49,10
+    LTEXT           "Blur:",IDC_STATIC,22,162,14,8
+    EDITTEXT        IDC_LAY_BLUR,57,158,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "E-W Offset:",IDC_STATIC,115,190,38,8
+    EDITTEXT        IDC_LAY_OFFX,160,187,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "N-S Offset:",IDC_STATIC,115,210,36,8
+    EDITTEXT        IDC_LAY_OFFY,160,205,40,14,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "Composite Within ",IDC_LAY_WITHIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,209,73,10
+    LTEXT           "Display",IDC_STATIC,20,13,24,8
+    LTEXT           "Active",IDC_STATIC,50,13,20,8
+    LTEXT           "CmpWithin",IDC_STATIC,80,13,35,8
+    LTEXT           "Name",IDC_STATIC,215,13,20,8
+    LTEXT           "N-S",IDC_STATIC,152,13,13,8
+    LTEXT           "Blur",IDC_STATIC,185,13,13,8
+    LTEXT           "E-W",IDC_STATIC,122,13,15,8
+    PUSHBUTTON      "Apply",IDC_LAY_APPLY,221,162,50,14
+    CONTROL         "In",IDC_LAY_BLURIN,"Button",BS_AUTORADIOBUTTON | WS_GROUP,115,161,21,10
+    CONTROL         "Normal",IDC_LAY_BLURIT,"Button",BS_AUTORADIOBUTTON,138,161,38,10
+    CONTROL         "Out",IDC_LAY_BLUROUT,"Button",BS_AUTORADIOBUTTON,177,161,26,10
+END
+
+IDD_LAYERX DIALOG  0, 0, 329, 252
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Layer Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,272,213,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,272,231,50,14
+    LISTBOX         IDC_LAYER,16,34,286,99,LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Name:",IDC_STATIC,96,170,21,8
+    EDITTEXT        IDC_LAY_NAME,133,167,40,14,ES_AUTOHSCROLL
+    CONTROL         "Display",IDC_LAY_DISPLAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,195,38,10
+    CONTROL         "Active",IDC_LAY_ACTIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,210,35,10
+    LTEXT           "Blur:",IDC_STATIC,98,191,14,8
+    EDITTEXT        IDC_LAY_BLUR,133,187,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "X Offset:",IDC_STATIC,98,206,25,8
+    EDITTEXT        IDC_LAY_OFFX,133,203,40,14,ES_AUTOHSCROLL
+    LTEXT           "Y Ofsfet:",IDC_STATIC,98,226,26,8
+    EDITTEXT        IDC_LAY_OFFY,133,221,40,14,ES_AUTOHSCROLL
+    CONTROL         "Composite Within ",IDC_LAY_WITHIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,226,64,10
+    LTEXT           "Display",IDC_STATIC,48,22,24,8
+    LTEXT           "Active",IDC_STATIC,78,22,20,8
+    LTEXT           "CmpWithin",IDC_STATIC,108,22,33,8
+    LTEXT           "Name",IDC_STATIC,240,22,20,8
+    LTEXT           "OffY",IDC_STATIC,180,22,14,8
+    LTEXT           "Blur",IDC_STATIC,210,22,13,8
+    LTEXT           "OffX",IDC_STATIC,150,22,13,8
+    LTEXT           "Selected",IDC_STATIC,17,22,28,8
+    CONTROL         "Selected",IDC_LAY_SELECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,180,43,10
+    PUSHBUTTON      "Apply",IDC_LAY_APPLY,272,193,50,14
+END
+
+IDD_COLOR_KEY DIALOGEX 0, 0, 380, 122
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Key Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,95,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,93,40,14
+    LTEXT           "Red",IDC_STATIC,203,22,14,8
+    LTEXT           "Green",IDC_STATIC,203,43,21,8
+    LTEXT           "Blue",IDC_STATIC,203,63,16,8
+    EDITTEXT        IDC_CK_RED,225,19,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_CK_GREEN,225,40,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_CK_BLUE,225,60,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_CK_EXTENT,76,67,40,14,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "Slider1",IDC_CK_SLIDE,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,25,50,129,15
+    LTEXT           "Adjust Tolerance",IDC_STATIC,68,43,54,8
+    GROUPBOX        "Key Color",IDC_STATIC,185,9,95,75
+    PUSHBUTTON      "Select Color Key",IDC_CK_SELECT,22,17,61,20
+    PUSHBUTTON      "Stop Selecting",IDC_CK_STOP,101,17,61,20
+    CONTROL         "RGB",IDC_CK_RGB,"Button",BS_AUTORADIOBUTTON | WS_GROUP,306,14,31,10
+    CONTROL         "YIQ",IDC_CK_YIQ,"Button",BS_AUTORADIOBUTTON,306,28,28,10
+    CONTROL         "HLS",IDC_CK_HLS,"Button",BS_AUTORADIOBUTTON,306,42,30,10
+    CONTROL         "Lab",IDC_CK_LAB,"Button",BS_AUTORADIOBUTTON,306,56,28,10
+    CONTROL         "Invert",IDC_CK_INVERT,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,306,69,34,10
+END
+
+IDD_IMP_STATUS DIALOG  0, 0, 232, 84
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import Multiple Stills"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Exit",IDC_EXIT,178,62,36,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,18,12,196,14
+    PUSHBUTTON      "Resume",IDC_RESUME,180,43,34,14
+    LTEXT           "Name:",IDC_STATIC,18,36,21,8
+    LTEXT           "Frame:",IDC_STATIC,18,51,22,8
+    LTEXT           "Level:",IDC_STATIC,18,64,19,8
+    EDITTEXT        IDC_NAME,57,34,102,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_FRAME,58,50,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_LEVEL,58,66,40,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_PROGRESS DIALOG  0, 0, 360, 81
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Progress"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Exit",IDC_EXIT,304,43,36,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,15,19,326,14
+    EDITTEXT        IDC_TIME,178,41,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Resume",IDC_RESUME,263,43,34,14
+    RTEXT           "Frame:",IDC_INDEX,17,43,33,8
+    EDITTEXT        IDC_COUNT,58,41,50,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Time Remaining:",-1,118,45,57,8
+END
+
+IDD_EXPIRE DIALOGEX 0, 0, 217, 161
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DigiCel FlipBook"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,79,133,50,14
+    CTEXT           "This version of FlipBook has expired.",IDC_EXP_BAD,51,81,116,8
+    CTEXT           "FlipBook",IDC_EXP_BAD2,68,36,71,8,SS_CENTERIMAGE
+    LTEXT           "Please visit digicel.net/download to get a current copy.",IDC_STATIC,21,92,174,8
+END
+
+IDD_EXPIRESOON DIALOGEX 0, 0, 209, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Expires Soon"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,79,73,50,14
+    CONTROL         "Don't Show This Again",IDC_REMIND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,44,50,90,10
+    LTEXT           "This version of FlipBook is about to expire.",IDC_EXP_BAD,35,18,138,8
+    LTEXT           "Please visit digicel.net/download to get a current copy.",IDC_STATIC,17,33,174,8
+END
+
+IDD_EXPIRESOON1 DIALOG  0, 0, 211, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Extended Features Expire Soon"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,80,69,50,14
+    CONTROL         "Don't Show This Again",IDC_REMIND,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,60,49,90,10
+    CTEXT           "This version of FlipBook will expire in 1 day.",IDC_EXP_BAD,26,18,159,8
+    LTEXT           "Please visit digicel.net/download to get a current copy.",IDC_STATIC,18,31,174,8
+END
+
+IDD_EXPIRED2 DIALOG  0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Extended Features Will Expire Soon"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,69,50,14
+    CONTROL         "Don't Show This Again",IDC_REMIND,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,33,41,90,10
+    LTEXT           "About To Expire",IDC_STATIC,50,18,115,8
+END
+
+IDD_TEMPSOON DIALOG  0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Temporary Code Will Expire Soon."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,69,50,14
+    CONTROL         "Don't Show This Again",IDC_REMIND,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,37,46,90,10
+    LTEXT           "The Temporary Code Will Expire Soon.",IDC_STATIC,32,18,127,8
+END
+
+IDD_TEMPNOW DIALOG  0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Your Temporary Code Has Expired"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,62,50,14
+    LTEXT           "Your Temporary Code Has Expired.",IDC_STATIC,33,31,112,8
+END
+
+IDD_EXT_EMPTY DIALOG  0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Empty Cel"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,103,47,50,14
+    CONTROL         "Don't Show This Again",IDC_REMIND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,44,71,90,10
+    LTEXT           "Create New Image?",IDC_STATIC,58,24,115,8
+    PUSHBUTTON      "Cancel",IDCANCEL,32,47,50,14
+END
+
+IDD_LIGHTBOX_PAINT DIALOG  0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Tool Selected"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,69,50,14
+    CONTROL         "Don't Show This Again",IDC_REMIND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,33,41,90,10
+    LTEXT           "About To turn off paint with color tool",IDC_STATIC,50,18,115,8
+END
+
+IDD_ASSOC_EXE DIALOG  0, 0, 225, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Association"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,124,50,50,14
+    CONTROL         "Don't Show This Again",IDC_REMIND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,77,90,10
+    CTEXT           "Click on Yes to create the association.",IDC_STATIC,41,24,145,8
+    PUSHBUTTON      "No",IDCANCEL,53,50,50,14
+    CTEXT           "Your DGC files are not currently associated with FlipBook.",IDC_EXP_BAD,21,10,183,11
+END
+
+IDD_NOSAVE DIALOGEX 0, 0, 225, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scene Updated"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,81,74,50,14
+    CONTROL         "Don't Show This Again",IDC_REMIND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,60,90,10
+    CTEXT           "This Scene File is from an Earlier version",IDC_STATIC,29,12,164,8
+    CTEXT           "an earlier version of Flibook will be unable to open it",IDC_EXP_BAD,17,38,183,11
+    CTEXT           "of FlipBook, If you save it",IDC_STATIC,26,25,152,8
+END
+
+IDD_EXTERNAL DIALOG  0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Waiting For Editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,34,69,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,111,69,50,14
+END
+
+IDD_NUSCAN_DIALOGK DIALOG  0, 0, 433, 254
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scan Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDC_CLOSE,197,224,50,14,BS_CENTER
+    EDITTEXT        IDC_LEVEL,62,117,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_FRAME,62,99,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_HOLD,62,135,40,14,ES_AUTOHSCROLL
+    LTEXT           "Level",IDC_STATIC,25,119,33,8
+    LTEXT           "Frame",IDC_STATIC,25,101,32,8
+    LTEXT           "Hold",IDC_SCAN_TEXT,25,137,26,8
+    PUSHBUTTON      "Select Scanner",IDC_SCAN_SELECT,71,27,62,14
+    PUSHBUTTON      "Scan",IDC_SCAN_SCAN,323,27,62,14,BS_CENTER
+    GROUPBOX        "Rotation",IDC_STATIC,235,88,67,124
+    CONTROL         "None",IDC_SCAN_ROT0,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,249,105,33,10
+    CONTROL         "90",IDC_SCAN_ROT90,"Button",BS_AUTORADIOBUTTON,249,126,24,10
+    CONTROL         "180",IDC_SCAN_ROT180,"Button",BS_AUTORADIOBUTTON,249,147,28,10
+    CONTROL         "270",IDC_SCAN_ROT270,"Button",BS_AUTORADIOBUTTON,249,168,28,10
+    CONTROL         "AutoScan",IDC_SCAN_AUTO,"Button",BS_AUTORADIOBUTTON,249,189,55,10
+    EDITTEXT        IDC_SCAN_FIELDSIZE,367,108,40,14,ES_AUTOHSCROLL
+    LTEXT           "Field Size",IDC_STATIC,328,110,31,8
+    LTEXT           "Offset",IDC_STATIC,328,133,26,8
+    EDITTEXT        IDC_SCAN_OFFSET,367,129,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "View Log",IDC_SCAN_VIEWLOG,346,168,50,14,WS_DISABLED
+    PUSHBUTTON      "Clear Log",IDC_SCAN_CLEARLOG,346,189,50,14,WS_DISABLED
+    CONTROL         "Pegs On Top",IDC_SCAN_PEGSTOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,328,150,58,10
+    CONTROL         "Auto Hold",IDC_SCAN_AUTOHOLD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,32,194,46,10
+    CONTROL         "Overlay",IDC_IMP_24,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,138,154,40,10
+    LTEXT           "Label",IDC_SCAN_TEXT2,25,157,18,8
+    EDITTEXT        IDC_LABEL,62,153,40,14,ES_AUTOHSCROLL
+    CONTROL         "Keying",IDC_KEYING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,138,170,37,10
+    EDITTEXT        IDC_ALPHA_KEY,178,168,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Save Original Images",IDC_SCAN_SAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,134,189,83,10
+    CONTROL         "Scale to Fit",IDC_SCALE_BG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,138,106,51,10
+    CONTROL         "Slider1",IDC_CONTRAST,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,184,54,100,15
+    CONTROL         "Slider2",IDC_BRIGHTNESS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,75,54,100,15
+    LTEXT           "Contrast",IDC_STATIC,219,72,27,8
+    LTEXT           "Brightnes",IDC_STATIC,110,72,30,8
+    EDITTEXT        IDC_DPI,319,55,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "DPI",IDC_STATIC,295,58,13,8
+    GROUPBOX        "AutoScan Settings",IDC_STATIC,314,88,107,124
+    PUSHBUTTON      "Preview",IDC_PREVIEW,155,27,62,14
+    PUSHBUTTON      "Accept",IDC_ACCEPT,239,27,62,14
+    CONTROL         "Grayscale",IDC_SCAN_GRAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,138,122,47,10
+    GROUPBOX        "XSheet",IDC_STATIC,13,88,104,124
+    GROUPBOX        "Processing",IDC_STATIC,127,88,98,124
+    LTEXT           "Stitching",IDC_STATIC,25,175,28,8
+    EDITTEXT        IDC_STITCH,62,172,40,14,ES_AUTOHSCROLL
+    CONTROL         "Color",IDC_SCAN_COLOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,138,138,32,10
+    LTEXT           "HW/Offsets",IDC_STATIC,24,25,39,8
+END
+
+IDD_COLOR_KIND DIALOG  0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Kind"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    CONTROL         "Simple",IDC_COLOR_SIMPLE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,20,14,61,10
+    CONTROL         "Graduation",IDC_COLOR_GRAD,"Button",BS_AUTORADIOBUTTON,20,30,51,10
+    CONTROL         "Pattern",IDC_COLOR_PATTERN,"Button",BS_AUTORADIOBUTTON,19,49,39,10
+END
+
+IDD_GRAD DIALOGEX 0, 0, 164, 185
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Graduated Color"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,153,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,89,153,50,14
+    CONTROL         "Radial",IDC_GRAD_RAD,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,24,74,36,10
+    CONTROL         "Linear",IDC_GRAD_LIN,"Button",BS_AUTORADIOBUTTON,88,74,35,10
+    PUSHBUTTON      "Set Color 1",IDC_GRAD_SETC1,20,90,50,21
+    PUSHBUTTON      "Set Point 1",IDC_GRAD_SETP1,88,90,50,14
+    PUSHBUTTON      "Set Color 2",IDC_GRAD_SETC2,21,115,50,19
+    PUSHBUTTON      "Set Point 2",IDC_GRAD_SETP2,88,105,50,14
+    CONTROL         "",IDC_GRAD_COLOR,"Button",BS_OWNERDRAW | WS_DISABLED,22,15,113,46
+    PUSHBUTTON      "Change Color Kind",IDC_GRAD_CHANGE,22,136,116,14
+    PUSHBUTTON      "Set Points",IDC_GRAD_SETP12,88,120,50,14
+END
+
+IDD_TEXTURE DIALOG  0, 0, 186, 146
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Texture"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,125,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,125,50,14
+    CONTROL         "H Reflect",IDC_H_SYM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,63,46,10
+    CONTROL         "V Reflect",IDC_V_SYM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,103,63,45,10
+    CONTROL         "Button1",IDC_TEXTURE,"Button",BS_OWNERDRAW | WS_DISABLED,21,14,119,41
+    LTEXT           "Name:",IDC_STATIC,15,103,22,8
+    EDITTEXT        IDC_TEXTURE_NAME,53,99,108,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      ">",IDC_CHANGE,164,99,15,14
+    PUSHBUTTON      "Kind Change",IDC_KIND_CHANGE,74,125,50,14
+    CONTROL         "Alpha Only",IDC_TEXTURE_ALPHA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,78,50,10
+END
+
+IDD_SNDTRACK_DLG DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Sound Track"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,39,44,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,45,50,14
+    LTEXT           "Track:",IDC_STATIC,12,15,27,10
+    EDITTEXT        IDC_SND_TRACK,51,11,40,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_PRODUCTS DIALOGEX 0, 0, 203, 121
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "License Manager"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,49,66,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,70,66,14
+    LISTBOX         IDC_PRODUCTS,7,40,114,58,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Static",IDC_LICENSEE,34,14,111,8
+    LTEXT           "For:",IDC_STATIC,15,14,13,8
+    LTEXT           "Select Product",IDC_STATIC,16,27,109,8
+    PUSHBUTTON      "Cancel Online Licensing",IDC_NO_LICENSE,14,103,88,14
+END
+
+IDD_CAP_OPTIONS DIALOG  0, 0, 225, 131
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Capture Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,139,100,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,45,100,50,14
+    CONTROL         "Rotate Image 180",IDC_CAP_ROTATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,19,73,10
+    CONTROL         "Hold Aspect Ratio",IDC_CAP_ASPECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,36,73,10
+    CONTROL         "Halt Video Stream",IDC_CAP_BOZO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,53,77,10
+    COMBOBOX        IDC_CAP_DEVICES,13,17,91,38,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_CAP_DEV_OPT,14,50,91,37,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Devices",IDC_STATIC,15,6,65,8
+    LTEXT           "Device Options",IDC_STATIC,13,38,81,8
+    CONTROL         "Crop",IDC_CAP_CROP,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,131,70,69,10
+    EDITTEXT        IDC_AVG,168,81,40,14,ES_AUTOHSCROLL
+    LTEXT           "Average",IDC_STATIC,127,86,28,8
+END
+
+IDD_LIGHTBOX DIALOGEX 0, 0, 448, 237
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Light Box Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,208,209,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,126,209,50,14
+    CONTROL         "In Betweening",IDC_LIGHT_INBETWEEN,"Button",BS_AUTORADIOBUTTON | WS_GROUP,37,33,61,10
+    CONTROL         "Animate Straight Ahead",IDC_LIGHT_MRU,"Button",BS_AUTORADIOBUTTON,168,33,90,10
+    CONTROL         "Multi-Level Painting",IDC_LIGHT_PAINT,"Button",BS_AUTORADIOBUTTON,311,36,77,10
+    CONTROL         "Next",IDC_LIGHT_NEXT,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,56,80,31,10
+    CONTROL         "Previous",IDC_LIGHT_PREV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,56,57,43,10
+    LTEXT           "# of Drawings",IDC_STATIC,166,56,45,8
+    EDITTEXT        IDC_LIGHT_DEPTH,214,53,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Show Background",IDC_LIGHT_BG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,171,75,10
+    LTEXT           "BG Darkness",IDC_STATIC,28,189,43,8
+    LTEXT           "Min Density",IDC_STATIC,166,71,40,8
+    EDITTEXT        IDC_LIGHT_DENSITY,214,69,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "%",IDC_STATIC,255,71,8,8
+    EDITTEXT        IDC_LIGHT_BG_DARK,76,187,31,14,ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,109,190,8,8
+    CONTROL         "A",IDC_LIGHT_BUD_0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,184,159,21,10
+    EDITTEXT        IDC_LIGHT_BUDDY0,170,173,40,14,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "B",IDC_LIGHT_BUD_1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,249,159,21,10
+    CONTROL         "C",IDC_LIGHT_BUD_2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,316,159,21,10
+    CONTROL         "D",IDC_LIGHT_BUD_3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,378,159,21,10
+    EDITTEXT        IDC_LIGHT_BUDDY1,235,174,40,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIGHT_BUDDY2,300,174,40,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIGHT_BUDDY3,365,175,40,14,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,157,23,110,81
+    GROUPBOX        "",IDC_STATIC,26,23,110,80
+    GROUPBOX        "Additional Reference Levels",IDC_STATIC,154,144,275,54
+    PUSHBUTTON      "Apply",IDC_APPLY,289,209,50,14
+    GROUPBOX        "Drawing Tools",IDC_STATIC,16,13,264,124
+    GROUPBOX        "Painting Tools",IDC_STATIC,301,13,128,124
+    CONTROL         "Enable Xsheet Highlighting",IDC_LIGHT_XSHEET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,148,101,10
+    CONTROL         "Previous",IDC_LIGHT_PREV1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,56,46,43,10
+    CONTROL         "Next",IDC_LIGHT_NEXT1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,56,91,31,10
+    EDITTEXT        IDC_LIGHT_MAX,214,85,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "%",IDC_STATIC,255,85,8,8
+    LTEXT           "Max Density",IDC_STATIC,166,85,40,8
+    LTEXT           "Image Being Edited",IDC_STATIC,43,68,62,8
+    CONTROL         "Show Reference Level Paint",IDC_SHOW_PAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,311,51,107,10
+    LTEXT           "*For single level painting turn   the light box off.",IDC_STATIC,316,75,93,24
+    CONTROL         "Show Paint in Light Box",IDC_LIGHTBOX_PAINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,108,114,10
+    LTEXT           "Show Paint cannot be turned off while a paint tool is selected.",IDC_LIGHT_TOOL,41,122,213,8
+END
+
+IDD_NEW_COLOR_KEY DIALOG  0, 0, 240, 163
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Key Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,183,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,183,24,50,14
+END
+
+IDD_EXIST_SINGLE DIALOGEX 0, 0, 230, 115
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cell Exists"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Yes (this one)",IDOK,101,74,50,14
+    PUSHBUTTON      "No",IDCANCEL,168,75,50,14
+    LTEXT           "Cell Already Exists at :",IDC_STATIC,13,14,73,8
+    LTEXT           "Frame:",IDC_STATIC,28,32,22,8
+    EDITTEXT        IDC_FRAME,62,29,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_LEVEL,150,29,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Level",IDC_STATIC,122,32,18,8
+    LTEXT           "Overwrite ?",IDC_STATIC,44,53,50,8
+    PUSHBUTTON      "Yes (and remaining)",IDC_YESREST,14,74,70,14
+END
+
+IDD_LOSE_ALPHA DIALOG  0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lose Alpha ?"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,113,69,50,14
+    PUSHBUTTON      "No",IDCANCEL,51,69,50,14
+    LTEXT           "The Selected File Format Does Not Support",IDC_STATIC,18,14,141,8
+    LTEXT           "Transparency (Alpha Channel)",IDC_STATIC,20,27,139,8
+    LTEXT           "Proceed ?",IDC_STATIC,23,43,99,8
+END
+
+IDD_CUST_TOOLBAR DIALOGEX 0, 0, 387, 174
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Customize Toolbar"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_CT_AVAIL,36,28,100,133,LBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_CT_CURRENT,213,29,100,133,LBS_OWNERDRAWVARIABLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Move Up",IDC_CT_MOVE_UP,330,118,50,14
+    PUSHBUTTON      "Move Down",IDC_CT_MOVE_DN,330,145,50,14
+    PUSHBUTTON      "Add ->",IDC_CT_ADD,153,58,50,14
+    PUSHBUTTON      "<- Remove ",IDC_CT_REMOVE,153,98,50,14
+    LTEXT           "Available",IDC_STATIC,33,13,93,8
+    LTEXT           "Current",IDC_STATIC,214,16,55,8
+    PUSHBUTTON      "Default",IDC_CT_RESET,330,59,50,14
+    PUSHBUTTON      "Close",IDCANCEL,330,28,50,14
+    PUSHBUTTON      "Revert",IDC_CT_REVERT,330,89,50,14
+END
+
+IDD_REGISTER_IT DIALOG  0, 0, 369, 185
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Unlock Flipbook"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,78,14,87,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAIL1,227,14,123,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAIL2,227,30,123,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ORDER_NBR,202,70,99,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "Submit",IDOK,211,144,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,118,144,50,14
+    CONTROL         "I ordered from the DigiCel web site.",IDC_OUR_ORDER,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,39,55,125,10
+    CONTROL         "I ordered from someone else.",IDC_OTHER_ORDER,"Button",BS_AUTORADIOBUTTON,39,89,107,10
+    CTEXT           "Please submit the information above and then send us a copy of your order confirmation from the other vendor so we can see which version of FlipBook you ordered and send you the correct code.",IDC_OTHER_TEXT,77,105,222,29
+    LTEXT           "Registered User:",IDC_STATIC,15,18,54,8
+    LTEXT           "Email Address:",IDC_STATIC,172,17,47,8
+    LTEXT           "Confirm Email:",IDC_STATIC,174,32,45,8
+    LTEXT           "Order Number from Confirmation Email:",IDC_OUR_TEXT,69,72,122,8
+    LTEXT           "FlipBook ID:",IDC_EXP_BAD,29,35,40,8
+    EDITTEXT        IDC_APID,78,32,87,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+END
+
+IDD_OTHER DIALOG  0, 0, 211, 116
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ordered From Someone Else"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,81,72,50,14
+    CTEXT           "Thanks for sending us your FlipBook ID. We will send your code within one business day of receiving your proof of purchase.",IDC_EXP_BAD,40,22,132,33
+END
+
+IDD_OURS DIALOG  0, 0, 186, 88
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ordered From DigiCel"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,72,59,50,14
+    CTEXT           "Thanks for sending us your FlipBook ID. We will email your code within one business day.",IDC_EXP_BAD,25,21,135,23
+END
+
+IDD_PAL_SHARED DIALOGEX 166, 65530, 198, 126
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Shared Palette "
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,106,94,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,34,94,50,14
+    CONTROL         "Apply changes to all levels using this palette.",IDC_PAL_MOD_ALL,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,23,29,156,10
+    CONTROL         "Make a new palette for this level only.",IDC_PAL_MOD_ONE,
+                    "Button",BS_AUTORADIOBUTTON,23,49,135,10
+    LTEXT           "Name:",IDC_PAL_NEW_TEXT,44,71,22,8
+    EDITTEXT        IDC_PAL_NEW_NAME,82,68,62,14,ES_AUTOHSCROLL
+    LTEXT           "This palette is shared with other levels.",IDC_STATIC,38,9,122,8
+END
+
+IDD_PAL_LINKED DIALOGEX 166, 65530, 250, 136
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION " "
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,143,111,50,14
+    LTEXT           "This palette is linked to a Master Palette file:",IDC_STATIC,47,12,139,8
+    EDITTEXT        IDC_PAL_EXT_FNAME,21,25,210,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Update the Master Palette",IDC_PAL_EXT_UPDATE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,48,50,103,10
+    CONTROL         "Break the link ",IDC_PAL_EXT_NEW,"Button",BS_AUTORADIOBUTTON,48,69,60,10
+    LTEXT           "Name the new palette:",IDC_PAL_EXT_NAME_TEXT,48,86,78,8
+    EDITTEXT        IDC_PAL_EXT_NAM,125,83,58,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ok",IDOK,54,112,50,14
+END
+
+IDD_PAL_MISSING DIALOGEX 166, 65530, 250, 136
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "External Palette File Missing "
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "This palette is linked to a Master Palette file:",IDC_STATIC,47,12,139,8
+    EDITTEXT        IDC_PAL_EXT_FNAME,21,25,210,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Break the link ",IDC_PAL_EXT_NO_LOCATE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,48,69,60,10
+    LTEXT           "Name the new palette:",IDC_PAL_EXT_NAME_TEXT,48,86,78,8
+    EDITTEXT        IDC_PAL_EXT_NAM,125,83,58,14,ES_AUTOHSCROLL
+    CONTROL         "Locate The File",IDC_PAL_EXT_LOCATE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,48,50,103,10
+    PUSHBUTTON      "Ok",IDOK,99,112,50,14
+END
+
+IDD_PAL_DIFF DIALOGEX 166, 65530, 250, 136
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "External Palette File Different"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "This palette is linked to a Master Palette file:",IDC_STATIC,47,12,139,8
+    EDITTEXT        IDC_PAL_EXT_FNAME,21,25,210,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Name the new palette:",IDC_PAL_EXT_NAME_TEXT,48,86,72,8
+    EDITTEXT        IDC_PAL_EXT_NAM,127,83,58,14,ES_AUTOHSCROLL
+    CONTROL         "Import Changes From the Master Palette",IDC_PAL_EXT_UPDATE,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,48,50,149,10
+    CONTROL         "Break the link ",IDC_PAL_EXT_NEW,"Button",BS_AUTORADIOBUTTON,48,69,60,10
+    PUSHBUTTON      "Ok",IDOK,77,112,50,14
+END
+
+IDD_PAL_EXT_MOD DIALOGEX 166, 65530, 200, 171
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Modified External Palette"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Modify the local palette, update the Master Palette",IDOK,54,103,94,25,BS_MULTILINE
+    PUSHBUTTON      "Cancel",IDCANCEL,71,138,50,14
+    LTEXT           "The palette named:",IDC_STATIC,27,13,65,8
+    EDITTEXT        IDC_PAL_FNAME,19,52,163,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Break the link and create a new palette",IDC_PAL_NO,18,79,164,14
+    EDITTEXT        IDC_PAL_NAME,102,10,53,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Is linked to an external palette file:",IDC_STATIC,21,35,134,8
+END
+
+IDD_PAL_UNUSED DIALOGEX 166, 65530, 198, 86
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Unused Palette"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Remove the palette from this scene",IDOK,21,58,163,14
+    LTEXT           "This Palette is NOT used :",IDC_STATIC,15,9,86,8
+    EDITTEXT        IDC_PAL_NAME,109,7,62,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Keep the unused palette in the scene",IDC_PAL_NO,21,34,164,14
+END
+
+IDD_PAL_NO_TEXTURE DIALOGEX 166, 65530, 250, 99
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Missing Texture file"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_MISSING_TEXTURE,22,30,205,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "The following Texture File is Miissing:",IDC_STATIC,65,7,118,8
+    PUSHBUTTON      "Locate The File",IDC_TEXTURE_LOCATE,70,51,109,14
+    PUSHBUTTON      "Revert To Solid Color",IDOK,71,72,107,14
+END
+
+IDD_COLOR_DLG DIALOGEX 0, 0, 263, 393
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Dialog"
+FONT 8, "MS Sans Serif", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,189,364,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,364,50,14
+    CONTROL         "Wheel",IDC_CD_WHEEL,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,79,18,166,116
+    CONTROL         "",IDC_CD_OPACITY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,88,148,150,10
+    CONTROL         "",IDC_CD_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,88,137,150,10
+    CONTROL         "Color",IDC_CD_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,79,163,166,32
+    CONTROL         "Solid Color",IDC_CD_SIMPLE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,14,180,49,10
+    CONTROL         "Graduated Color",IDC_CD_GRAD,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE,14,209,68,10
+    CONTROL         "Texture or Pattern",IDC_CD_TEXTURE,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE,14,283,79,9
+    CONTROL         "Horizontal",IDC_CD_TEXT_H,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,132,331,47,10
+    CONTROL         "Vertical",IDC_CD_TEXT_V,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,199,331,40,10
+    CONTROL         "Use Texture Only",IDC_CD_TEXT_ALPHA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,332,74,10
+    LTEXT           "File Name :",IDC_CD_TXT_NAME,77,301,38,8
+    EDITTEXT        IDC_CD_TEXT_NAME,115,299,132,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      ">>",IDC_CD_TEXT_CHANGE,24,298,50,14
+    CONTROL         "HSL 1",IDC_CD_HSL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,80,4,34,10
+    CONTROL         "HSL 2",IDC_CD_HSV,"Button",BS_AUTORADIOBUTTON,118,4,31,10
+    CONTROL         "Red",IDC_CD_R,"Button",BS_AUTORADIOBUTTON,153,4,26,10
+    CONTROL         "Green",IDC_CD_G,"Button",BS_AUTORADIOBUTTON,183,4,31,10
+    CONTROL         "Blue",IDC_CD_B,"Button",BS_AUTORADIOBUTTON,218,4,29,10
+    CONTROL         "Set Color 1",IDC_CD_GRAD_C1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,85,209,51,10
+    CONTROL         "Set Color 2",IDC_CD_GRAD_C2,"Button",BS_AUTORADIOBUTTON,197,209,51,10
+    CONTROL         "Radial",IDC_CD_GRAD_RAD,"Button",BS_AUTORADIOBUTTON | WS_GROUP,38,225,35,10
+    CONTROL         "Linear",IDC_CD_GRAD_LIN,"Button",BS_AUTORADIOBUTTON,38,239,35,10
+    PUSHBUTTON      "Set Point 1",IDC_CD_GRAD_P1,107,251,44,14
+    PUSHBUTTON      "Set Point 2",IDC_CD_GRAD_P2,179,251,44,14
+    PUSHBUTTON      "Click and Drag to Set Both Points",IDC_CD_GRAD_PP,81,223,164,14
+    LTEXT           "Lum",IDC_CD_SLIDE_TEXT,55,136,25,8
+    LTEXT           "Opacity",IDC_STATIC,54,148,26,8
+    EDITTEXT        IDC_CD_RED,46,71,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CD_GREEN,46,87,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CD_BLUE,46,103,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CD_HUE,46,19,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CD_SAT,46,35,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CD_LUM,46,51,25,14,ES_AUTOHSCROLL
+    LTEXT           "Hue:",IDC_STATIC,27,22,16,8
+    LTEXT           "Sat:",IDC_STATIC,29,38,14,8
+    LTEXT           "Lum:",IDC_STATIC,27,54,16,8
+    LTEXT           "Red:",IDC_STATIC,27,74,16,8
+    LTEXT           "Green:",IDC_STATIC,20,90,23,8
+    LTEXT           "Blue:",IDC_STATIC,26,106,17,8
+    LTEXT           "Opacity:",IDC_STATIC,15,122,28,8
+    EDITTEXT        IDC_CD_OPAC,46,119,25,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Revert",IDC_CD_REVERT,37,364,50,14
+    GROUPBOX        "",IDC_STATIC,10,273,244,81
+    GROUPBOX        "",IDC_STATIC,10,200,243,69
+    LTEXT           "OR",IDC_CD_GRAD_OR,160,241,12,8
+    LTEXT           "and",IDC_CD_GRAD_AND,159,254,13,8
+    GROUPBOX        "Reflection",IDC_STATIC,115,319,132,29
+END
+
+IDD_SLIDER DIALOGEX 0, 0, 362, 39
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_SLD_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_ENABLESELRANGE | WS_TABSTOP,35,0,296,13
+    CONTROL         "",IDC_SLD_VOLUME,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,249,26,57,10
+    CONTROL         "",IDC_SLD_RATE,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,52,26,57,10
+    EDITTEXT        IDC_SLD_FRAME,69,13,27,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Button4",IDC_SLD_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,173,13,20,20
+    CONTROL         "Button5",IDC_SLD_FWD,"Button",BS_OWNERDRAW | WS_TABSTOP,195,13,20,20
+    CONTROL         "Button6",IDC_SLD_END,"Button",BS_OWNERDRAW | WS_TABSTOP,218,13,20,20
+    CONTROL         "Button7",IDC_SLD_BACK,"Button",BS_OWNERDRAW | WS_TABSTOP,151,13,20,20
+    CONTROL         "Button8",IDC_SLD_BEGIN,"Button",BS_OWNERDRAW | WS_TABSTOP,127,13,20,20
+    CONTROL         "Loop",IDC_SLD_LOOP,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,261,14,36,13,WS_EX_STATICEDGE
+    LTEXT           "FPS",IDC_SLD_FPS,27,26,13,8
+    LTEXT           "Volume",IDC_SLD_VOLTXT,306,26,24,8
+    CHECKBOX        "-->|",IDC_SLD_STOP,331,1,16,12,BS_PUSHLIKE
+    CHECKBOX        "|<--",IDC_SLD_START,17,1,16,12,BS_PUSHLIKE
+    PUSHBUTTON      "-",ID_RATE_DOWN,43,25,10,10
+    PUSHBUTTON      "+",ID_RATE_UP,107,25,10,10
+END
+
+IDD_APPENDED_SND DIALOGEX 0, 0, 217, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Appended Sound"
+FONT 8, "MS Sans Serif", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,47,60,50,14
+    PUSHBUTTON      "No",IDCANCEL,121,60,50,14
+    CTEXT           "This scene contains embedded audio.",IDC_STATIC,28,12,160,11
+    CTEXT           "Do you want to save the audio in a seaparate file?",IDC_STATIC,15,42,187,8
+    LTEXT           "FlipBook 6 does not support embedded audio.",IDC_STATIC,35,26,147,8
+END
+
+IDD_COPIES_IN_USE DIALOGEX 0, 0, 217, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Copies In Use"
+FONT 8, "MS Sans Serif", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Try Again",IDOK,47,60,50,14
+    PUSHBUTTON      "Use Trial Mode",IDCANCEL,121,60,50,14
+    CTEXT           "All copies are currently in use.",IDC_STATIC,35,26,147,8
+END
+
+IDD_SEL_PAL DIALOGEX 0, 0, 134, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Palette"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,70,57,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,15,57,50,14
+    LISTBOX         IDC_SEL_PAL,15,14,104,40,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EXPORT_CAM DIALOGEX 0, 0, 376, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export Camera Moves"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,122,169,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,200,169,50,14
+    CONTROL         "X",IDC_CAM_X,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,140,20,10
+    CONTROL         "Y",IDC_CAM_Y,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,140,20,10
+    CONTROL         "Z",IDC_CAM_Z,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,140,20,10
+    CONTROL         "R",IDC_CAM_R,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,140,21,10
+    CONTROL         "B",IDC_CAM_B,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,140,20,10
+    CONTROL         "A",IDC_CAM_A,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,170,140,21,10
+    PUSHBUTTON      "All",IDC_CAM_ALL,200,138,50,14
+    CONTROL         "Export Computed Values",IDC_CAM_COMPUTED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,118,97,10
+    LTEXT           "Start Frame",IDC_STATIC,17,26,39,8
+    LTEXT           "End Frame",IDC_STATIC,135,27,35,8
+    LTEXT           "Start Level",IDC_STATIC,17,58,35,8
+    LTEXT           "End Level",IDC_STATIC,135,59,33,8
+    EDITTEXT        IDC_START_FRAME,64,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_FRAME,180,24,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_START_LEVEL,64,56,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_END_LEVEL,180,57,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Range",IDC_STATIC,11,11,242,72
+    PUSHBUTTON      "None",IDC_CAM_NONE,200,153,50,14
+    CONTROL         "Export Group Info",IDC_CAM_GROUPS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,96,74,10
+    CONTROL         "Export Only Active Levels",IDC_CAM_ONLY_ACTIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,96,98,10
+END
+
+IDD_IMPORT_CAM DIALOGEX 0, 0, 279, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import Camera Moves"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,122,169,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,200,169,50,14
+    CONTROL         "X",IDC_CAM_X,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,140,20,10
+    CONTROL         "Y",IDC_CAM_Y,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,140,20,10
+    CONTROL         "Z",IDC_CAM_Z,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,140,20,10
+    CONTROL         "R",IDC_CAM_R,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,140,21,10
+    CONTROL         "B",IDC_CAM_B,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,140,140,20,10
+    CONTROL         "A",IDC_CAM_A,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,170,140,21,10
+    PUSHBUTTON      "All",IDC_CAM_ALL,200,138,50,14
+    CONTROL         "Import Computed Values As Keys",IDC_CAM_COMPUTED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,118,124,10
+    LTEXT           "Start Level",IDC_CAM_IMP_LEVEL,127,48,35,8
+    EDITTEXT        IDC_START_FRAME,174,23,40,14,ES_AUTOHSCROLL
+    LTEXT           "Start Frame",IDC_CAM_IMP_FRAME,126,26,39,8
+    EDITTEXT        IDC_START_LEVEL,174,46,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "None",IDC_CAM_NONE,200,153,50,14
+    GROUPBOX        "Range",IDC_CAM_IMP_RANGE,122,6,150,81
+    LISTBOX         IDC_CAM_LIST,17,9,96,77,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Import Group Parameters",IDC_CAM_IMP_GROUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,66,97,10
+END
+
+IDD_EMBED_OPEN DIALOGEX 0, 0, 316, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Use Embedded Files"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "The following embedded files are also on this computer:",IDC_STATIC,24,18,190,8
+    LISTBOX         IDC_EMBED_LIST,17,42,275,99,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL
+    PUSHBUTTON      "Discard Changes",IDCANCEL,32,153,92,14
+    PUSHBUTTON      "Okay",IDOK,209,154,81,14
+    LTEXT           "Check the box to use the embedded file.",IDC_STATIC,24,29,205,8
+END
+
+IDD_EMBED_SAVE DIALOGEX 0, 0, 316, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save Embedded Files"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "The Following files can be embedded:",IDC_STATIC,24,18,190,8
+    LISTBOX         IDC_EMBED_LIST,17,32,275,100,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL
+    PUSHBUTTON      "Discard Changes",IDCANCEL,32,161,92,14
+    PUSHBUTTON      "Okay",IDOK,209,162,81,14
+    LTEXT           "Remove Check to Not Embed",IDC_STATIC,26,146,205,8
+END
+
+IDD_EMBED_ALREADY DIALOGEX 0, 0, 316, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Already Embedded"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "The following file is already embedded in the scene:",IDC_STATIC,24,18,190,8
+    EDITTEXT        IDC_EMBED_NAME,17,34,281,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Keep Embedded Files",IDOK,81,65,139,14
+    PUSHBUTTON      "Remove Embedded Files",IDCANCEL,81,87,139,14
+END
+
+IDD_EXPORT_EMBED DIALOGEX 0, 0, 462, 138
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export Embedded Files"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Export",IDC_EXP_EMBED,147,121,66,14
+    PUSHBUTTON      "Exit",IDCANCEL,19,121,66,14
+    LISTBOX         IDC_EMBED_LIST,7,16,441,88,LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EMBED_OPT DIALOGEX 0, 0, 262, 148
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Embedded Files Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,43,100,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,141,100,50,14
+    GROUPBOX        "Input",IDC_STATIC,20,19,86,72
+    CONTROL         "Never",IDC_EMB_IN_NEVER,"Button",BS_AUTORADIOBUTTON | WS_GROUP,34,35,35,10
+    CONTROL         "Always",IDC_EMB_IN_ALWAYS,"Button",BS_AUTORADIOBUTTON,34,55,39,10
+    CONTROL         "Prompt",IDC_EMBED_IN_PROMPT,"Button",BS_AUTORADIOBUTTON,34,75,39,10
+    GROUPBOX        "Output",IDC_STATIC,145,19,86,72
+    CONTROL         "Never",IDC_EMB_OUT_NEVER,"Button",BS_AUTORADIOBUTTON | WS_GROUP,159,35,35,10
+    CONTROL         "Always",IDC_EMB_OUT_ALWAYS,"Button",BS_AUTORADIOBUTTON,159,55,39,10
+    CONTROL         "Prompt",IDC_EMB_OUT_PROMPT,"Button",BS_AUTORADIOBUTTON,159,75,39,10
+    LTEXT           "***        Overide In Effect        ***",IDC_EMB_OVERRIDE,34,123,159,8
+END
+
+IDD_RECORD DIALOGEX 0, 0, 377, 63
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Record Video"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,330,29,37,18
+    PUSHBUTTON      "Play",IDC_SLD_PLAY,196,29,34,18
+    PUSHBUTTON      ">>",IDC_SLD_FWD,232,29,20,18
+    PUSHBUTTON      ">|",IDC_SLD_END,254,29,20,18
+    PUSHBUTTON      "<<",IDC_SLD_BACK,174,29,20,18
+    PUSHBUTTON      "|<",IDC_SLD_BEGIN,152,29,20,18
+    CONTROL         "Loop",IDC_SLD_LOOP,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,18,15,34,12,WS_EX_STATICEDGE
+    PUSHBUTTON      "Settings",IDC_SETTINGS,18,33,34,14
+    CONTROL         "",IDC_SLD_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_ENABLESELRANGE | WS_TABSTOP,11,0,356,14
+    PUSHBUTTON      "Record",IDC_SLD_RECORD,63,29,40,18
+    PUSHBUTTON      "Stop",IDC_SLD_STOP,108,29,32,18
+    LTEXT           "Frames:",IDC_SLD_FRAMES,86,16,56,8
+    LTEXT           "Static",IDC_SLD_FRAME,185,17,69,8
+    PUSHBUTTON      "Import",IDC_IMPORT,285,29,40,18
+END
+
+IDD_RECOPT DIALOGEX 0, 0, 298, 220
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Record Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,178,199,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,232,199,50,14
+    COMBOBOX        IDC_VID_DEVICES,115,18,150,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Video",IDC_DO_VIDEO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,21,33,10
+    COMBOBOX        IDC_VID_DIALOGS,115,36,150,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Devices :",IDC_VID_DEV_TXT,75,21,30,8
+    LTEXT           "Options :",IDC_VID_DLG_TXT,75,39,30,8
+    CONTROL         "Audio",IDC_DO_AUDIO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,96,34,10
+    COMBOBOX        IDC_AUD_DEVICES,115,93,150,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_AUD_DIALOGS,115,111,150,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Devices :",IDC_AUD_DEV_TXT,75,96,30,8
+    LTEXT           "Options :",IDC_AUD_DLG_TXT,75,114,30,8
+    CONTROL         "Preview",IDC_PREVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,137,41,10
+    PUSHBUTTON      "Save Settings",IDC_SAVE_SETTINGS,25,197,55,16
+    LTEXT           "Time Limit :",IDC_STATIC,29,159,37,8
+    EDITTEXT        IDC_TIME_LIMIT,88,156,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Sec.(5-20)",IDC_STATIC,130,158,35,8
+    PUSHBUTTON      "Export Capture",IDC_CAP_EXPORT,110,199,61,14
+    LTEXT           "Record Delay:",IDC_STATIC,185,159,47,8
+    EDITTEXT        IDC_REC_DELAY,236,156,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Erase Capture File When Finished",IDC_ERASE_CAP_FILE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,138,123,10
+    LTEXT           "PreAllocate Capture File Size :",IDC_STATIC,29,178,97,8
+    EDITTEXT        IDC_REC_SIZE,131,175,40,14,ES_AUTOHSCROLL
+    LTEXT           "MB (0 - 900)",IDC_STATIC,177,178,40,8
+    COMBOBOX        IDC_COMPRESSORS,114,56,152,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Compressors:",IDC_STATIC,61,58,45,8
+END
+
+IDD_RECORDING DIALOGEX 0, 0, 431, 56
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Recording"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_NOW,295,30,72,14
+    PUSHBUTTON      "Cancel",IDCANCEL,374,30,50,14
+    LTEXT           "",IDC_STATUS,20,14,124,8
+    LTEXT           "",IDC_MSG,20,33,252,8
+END
+
+IDD_FRAME_NUMBER DIALOGEX 0, 0, 316, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Render Frame Number"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,259,73,50,14
+    CONTROL         "Playback",IDC_PLAYBACK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,18,44,10
+    CONTROL         "Export",IDC_PUBLISH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,36,38,10
+    CONTROL         "Start at 0",IDC_START_AT_0,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP,17,55,47,10
+    CONTROL         "Start at 1",IDC_START_AT_1,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,17,73,47,10
+    CONTROL         "Upper Left",IDC_UL,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP,109,18,50,10
+    CONTROL         "Upper Right",IDC_UR,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,193,19,54,10
+    CONTROL         "Lower Left",IDC_LL,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,110,46,50,10
+    CONTROL         "Lower Right",IDC_LR,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,195,47,54,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_PENCIL              CURSOR                  "PENCIL.CUR"
+IDC_LPENCIL             CURSOR                  "LPENCIL.CUR"
+IDC_EPENCIL             CURSOR                  "EPENCIL.CUR"
+IDC_LEPENCIL            CURSOR                  "LEPENCIL.CUR"
+IDC_TRACE               CURSOR                  "PEN.CUR"
+IDC_LETRACE             CURSOR                  "LEPEN.cur"
+IDC_LTRACE              CURSOR                  "LPEN.cur"
+IDC_ZERASER             CURSOR                  "EPENCIL.CUR"
+IDC_ETRACE              CURSOR                  "EPEN.CUR"
+IDC_FILL                CURSOR                  "bucket.cur"
+IDC_LFILL               CURSOR                  "lbucket.cur"
+IDC_EFILL               CURSOR                  "ebucket.cur"
+IDC_LEFILL              CURSOR                  "lebucket.cur"
+IDC_BRUSH               CURSOR                  "brush.cur"
+IDC_LBRUSH              CURSOR                  "lbrush.cur"
+IDC_EBRUSH              CURSOR                  "ebrush.cur"
+IDC_LEBRUSH             CURSOR                  "lebrush.cur"
+IDC_VCR                 CURSOR                  "VCR.CUR"
+IDC_FLIP                CURSOR                  "FLIP.CUR"
+IDC_SCRUB               CURSOR                  "SCRUB.CUR"
+IDC_LERASER             CURSOR                  "LEPENCIL.cur"
+IDC_MAGCUR              CURSOR                  "Magnify.cur"
+IDC_HANDCUR             CURSOR                  "Trck4way.cur"
+IDC_MAGCUR1             CURSOR                  "magcur1.cur"
+IDC_EYEDROP1            CURSOR                  "eyedrop1.cur"
+IDC_EYEDROP2            CURSOR                  "eyedrop2.cur"
+IDC_CAMERA1             CURSOR                  "larrows.cur"
+IDC_NS_CUR              CURSOR                  "nscur.cur"
+IDC_EW_CUR              CURSOR                  "ewcur.cur"
+IDC_NSEW_CUR            CURSOR                  "nsewcur.cur"
+IDC_SCALE_CUR           CURSOR                  "scale.cur"
+IDC_ROTATE_CUR          CURSOR                  "rotate.cur"
+IDC_BLUR_CUR            CURSOR                  "blur.cur"
+IDC_ALPHA_CUR           CURSOR                  "alpha.cur"
+IDC_CAM_SELECT          CURSOR                  "harrow.cur"
+IDC_CENTER_CUR          CURSOR                  "center.cur"
+IDC_EYEDROP3            CURSOR                  "eyedrop3.cur"
+IDC_TBRUSH              CURSOR                  "tbrush.cur"
+IDC_TLBRUSH             CURSOR                  "tlbrush.cur"
+IDC_TEBRUSH             CURSOR                  "tebrush.cur"
+IDC_TLEBRUSH            CURSOR                  "tlebrush.cur"
+IDC_TLFILL              CURSOR                  "tlfill.cur"
+IDC_TFILL               CURSOR                  "tfill.cur"
+IDC_TEFILL              CURSOR                  "tefill.cur"
+IDC_TLEFILL             CURSOR                  "tlefill.cur"
+IDC_GRAD                CURSOR                  "grad.cur"
+IDC_GRAD1               CURSOR                  "grad1.cur"
+IDC_GRAD2               CURSOR                  "grad2.cur"
+IDC_MYWAND              CURSOR                  "mywand.cur"
+IDC_MYWAND2             CURSOR                  "mywand2.cur"
+IDC_MYCROSS             CURSOR                  "mycross.cur"
+IDC_MYLASSO             CURSOR                  "mylasso.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_AVIINDLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_TOOL_SELECT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 29
+    END
+
+    IDD_TOOL_RADDEN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 153
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_TOOL_NUPEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 161
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 19
+        RIGHTMARGIN, 380
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_FILEIMPORT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 370
+        TOPMARGIN, 3
+    END
+
+    IDD_SCANSKEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 419
+    END
+
+    IDD_INITIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+    END
+
+    IDD_GRIDDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_BRUSHES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_DENSITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_CELLOVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_LEVEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_LEVEL_PRO, DIALOG
+    BEGIN
+        RIGHTMARGIN, 183
+    END
+
+    IDD_CELL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_SOUND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_FRAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_EXPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 217
+    END
+
+    IDD_FXFLIP, DIALOG
+    BEGIN
+        RIGHTMARGIN, 179
+    END
+
+    IDD_REPLACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_KEEP_LINK2, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_DEMO, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 350
+    END
+
+    IDD_IDWARNING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_CAMERA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_LIPSYNC, DIALOG
+    BEGIN
+        RIGHTMARGIN, 129
+    END
+
+    IDD_PUCK, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 72
+        TOPMARGIN, 9
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_SUBPALETTE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 139
+        BOTTOMMARGIN, 9
+    END
+
+    IDD_GROUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_PEG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_VIEWLOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_PRINTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_NUCAP_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 426
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_GRAB_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 33
+    END
+
+    IDD_LAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_COLOR_KEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 366
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 353
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_EXPIRE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_EXPIRESOON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_EXTERNAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_NUSCAN_DIALOGK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 426
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_COLOR_KIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_GRAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_SNDTRACK_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_PRODUCTS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 196
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_LIGHTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 442
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_NEW_COLOR_KEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_EXIST_SINGLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_LOSE_ALPHA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_CUST_TOOLBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 380
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_REGISTER_IT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_OTHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_OURS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_PAL_SHARED, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_PAL_EXT_MOD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 198
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_PAL_NO_TEXTURE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 249
+    END
+
+    IDD_COLOR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 386
+    END
+
+    IDD_SLIDER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 355
+        TOPMARGIN, 9
+        BOTTOMMARGIN, 36
+    END
+
+    IDD_APPENDED_SND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_SEL_PAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_EXPORT_CAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 369
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_EMBED_OPEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_EMBED_SAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_EMBED_ALREADY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_EXPORT_EMBED, DIALOG
+    BEGIN
+        RIGHTMARGIN, 254
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_EMBED_OPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_RECORD, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_RECOPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_RECORDING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 49
+    END
+
+    IDD_FRAME_NUMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDOK                    "Exit Dialog\nSaving changes"
+    IDCANCEL                "Exit Dialog\nIgnoring changes"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VERSION_UP_TO_DATE  "This is the most recent version"
+    IDS_VERSION_OUT_OF_DATE "There is a newer version available at www.digicel.net/download"
+    IDS_PROMPT_KEEP_FRAME   "Frame is Modified,\nKeep Changes ?"
+    IDS_NOPLAYER            "Unable to Run Player"
+    IDS_CELL_OPENED         "You Cannot Replace an Open Drawing"
+    IDS_PROMPT_KEEP_CLIP    "Do you want to save the data on the clipboard?"
+    IDS_NO_PASTE            "Cannot Paste, Bad Format"
+    IDS_NO_PASTE_RES        "Cannot Paste Resoultion is Different"
+    IDS_PROMPT_KEEP_MODEL   "Model is Modified,\nKeep Changes ?"
+    IDS_EXT_PALS            "Cannot Open Palette File"
+    IDS_EXT_PALDIFF         "Palette File Data Differs"
+    IDS_EXT_MODEL           "Cannot Open Model File"
+    IDS_EXT_WAVE            "Cannot Open Sound File"
+    IDS_EXT_CHECK           "Scene File Format Updated"
+    IDS_PALETTE_SCENE       "This is the Scene Palette and Cannot Be Edited.\nWould You Like to Switch to a Custom Palette?"
+    IDS_PALETTE_EXTERNAL    "External Palettes Cannot Be Edited"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NO_CUT_EDIT         "You Cannot Cut The Cell That Is Being Edited"
+    IDS_LIB_NO_BG           "Cannot Save BG in Library"
+    IDS_LIB_LOAD            "Cannot Load Library"
+    IDS_NO_WORK             "Nothing To Do"
+    IDS_NO_CREATE           "Cannot Create File"
+    IDS_ERR_QT_INIT         "QT Init Error:%d"
+    IDS_ERR_MAYA_INIT       "Maya Init error:%d"
+    IDS_ERR_MAYA_CLOSE      "Maya close error:%d"
+    IDS_ERR_FILE_READ       "Cannot Read File : %d"
+    IDS_ERR_LIB_SAVE        "Cannot Save Library:%d"
+    IDS_ERR_INI_COPY        "Bad ini copy"
+    IDS_ERR_SCAN_SAVE       "Cannot Save Image"
+    IDS_ERR_LICENSE_UNLOCK  "Online Unlock Error:%d, Please Retry"
+    IDS_ERR_BAD_MOUTH       "Bad Mouth:%d"
+    IDS_ERR_FLV_CREATE      "FLVEncoder did not create file"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PALETTE_DEFAULT     "The Default Palette Cannot Be Edited.\nWould You Like to Switch to a Custom Palette?"
+    IDS_NO_LICENSEMGR       "License Manager Malfunction:%d"
+    IDS_NO_CLIENT           "Client is not Recognized"
+    IDS_NO_RENEW            "License Has Been Revoked"
+    IDS_EDUCATIONAL         "Did You Mean educational ?"
+    IDS_PALETTE_PROTECTED   "Palette Is Protected\nProceed Anyway?"
+    IDS_PALETTE_LOCKED      "Palette Cannot Be Modified?"
+    IDS_NO_TEXTURE_FILE     "Cannot Open Texture File"
+    IDS_NO_LIC_PRODUCTS     "No License Manager Products Avalaable"
+    IDS_EXT_SND_LEVELS      "File exceeds Sound Channel Count"
+    IDS_EXT_WAVE_CHANGE     "Changing Sound File to"
+    IDS_USING_OVERLAY       "This image is an overlay, which can only be viewed and composited.\nFlipBook's tools are not designed to edit overlays."
+    IDS_EXT_MODEL_CHANGE    "Changing Palette File to"
+    IDS_EXT_PAL_CHANGE      "Changing Model File to"
+    IDS_EXT_TEXTURE_CHANGE  "Changing Texture File to"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOT_FOR_LITE        "This Feature is not available in LITE versions."
+    IDS_UPDATE_NOW          "Do you want to exit now and install update ?"
+    IDS_CHECK_INTERNET      "Please check your internet connection."
+    IDS_NO_DIGICEL_CONNECT  "Unable to check for updates."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEMPNOW             "Remind Temp Expired"
+    IDS_DIFF2_USB           "USB Key Has Changed"
+    IDS_REVERT_DEMO         "Reverting to Demo Mode"
+    IDS_NO_USB              "USB Key Is Missing"
+    IDS_DIFF_USB            "USB Key Has Changed\nCheck About for Features"
+    IDS_NO_HELP             "Cannot Access Help File"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nCreate"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name"
+    ID_FILE_PAGE_SETUP      "Change the printing options"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_REVERT          "Revert document with a new name\nRevert"
+    ID_FILE_SAVEAS_MODEL    "Save Cel as Color Model\nSave Model"
+    ID_FILE_IMPAVI          "Import AVI\nImp AVI"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_EDIT            "External Edit\nExt Edit"
+    ID_EDIT_OUTSIDE         "Cut Outside\nCrop"
+    ID_FILE_IMPMOV          "Import MOV\nMovie"
+    ID_VIEW_TIMING          "Timing Mode\nTiming"
+    ID_OPT_LIGHTBOX         "LightBox Options"
+    ID_OPT_CUST_TB          "Customize Tool Bar\nCustom ToolBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EXPORT_MAYA          "Export Maya Timing\nExport Maya"
+    ID_VIEW_SUBPAL          "View Sub Palette"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ZOOM_800             "Zoom 800%"
+    ID_APP_REGISTER         "Register\nRegister"
+    ID_EDIT_PASTEREVERSED   "Paste Reversed\nPaste Rev"
+    ID_VIEW_CAMERA          "Show or Hide Camera Dialog\nCamera"
+    ID_ACTION_FLIP          "Flip Image\nFlip"
+    ID_APP_PROPERTIES       "Displays Scene Properties"
+    ID_VIEW_CAMERA_100      "100 % View"
+    ID_VIEW_CAMERA_50       "50 % Camera View"
+    ID_VIEW_CAMERA_25       "25 % Camera View"
+    ID_VIEW_CAMERA_ENLARGE  "Enlarge Camera View"
+    ID_VIEW_CAMERA_GRID     "Enable/Disable Field Chart"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_MODEL           "Edit Model"
+    ID_FILE_IMPWAVE         "Import Sound"
+    ID_VIEW_LAYER           "Select Layer For Edit\nLayer"
+    ID_VIEW_VIDEO           "Show or Hide Video Window\nVideo"
+    ID_SLIDER_START         "Set Start\nStart"
+    ID_SLIDER_STOP          "Set Stop\nStop"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane"
+    ID_PREV_PANE            "Switch back to the previous window pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection"
+    ID_EDIT_CLEAR_ALL       "Erase everything"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action"
+    ID_EDIT_REPLACE         "Replace specific text with different text"
+    ID_EDIT_SELECT_ALL      "Select the entire document"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOL_PENCIL          "Select Pencil Tool\nPencil"
+    ID_TOOL_TRACE           "Select Trace Tool\nTrace"
+    ID_TOOL_BRUSH           "Select Brush Tool\nBrush"
+    ID_TOOL_FILL            "Select Fill Tool\nFill"
+    ID_TOOL_ZOOM            "Select Zoom Tool\nZoom"
+    ID_TOOL_HAND            "Select Pan Tool\nPan"
+    ID_TOOL_EYEDROP         "Select Eyedropper Tool\nEyedropper"
+    ID_TOOL_ERASER          "Select Erasing Mode\nEraser"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOL_ERASER_BOX      "Select Erasing Mode\nEraser"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOL_WAND            "Wand"
+    ID_TOOL_CAM_PAN         "Select Pan Tool\nPan"
+    ID_TOOL_CAM_ZOOM        "Select Zoom Tool\nZoom"
+    ID_TOOL_CAM_ROTATE      "Select Rotate Tool\nRotate"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOL_CAM_BLUR        "Select Blur Tool\nBlur"
+    ID_TOOL_CAM_ALPHA       "Select Alpha Tool\nAlpha"
+    ID_TOOL_CAM_DALL        "Delete All Keys\nDelAll"
+    ID_TOOL_CAM_DTHIS       "Delete THis Key\nDelThis"
+    ID_TOOL_CAM_NEXT        "Next Key\nNxtKey"
+    ID_TOOL_CAM_PREV        "Previous Key\nPrvKey"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ACTION_FILL          "Auto Fill\nFill"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_MODE            "Color or Pencil Test\nColor Mode"
+    ID_VIEW_TOOLS           "Show or Hide Tool Box\nToolBox"
+    ID_OPT_SETTING          "Settings Menu"
+    ID_OPT_FG               "Turn the Light Table On or Off\nLight Bulb"
+    ID_OPT_BG               "Show or Hide Background\nBackground"
+    ID_FILE_EXPAVI          "Export AVI"
+    ID_FILE_SCAN            "Scan\nScan"
+    ID_FILE_PUBLISH         "Publish"
+    ID_FILE_EXPSWF          "Export SWF"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_BLANK           "Insert Blank Cel(s)\nBlank"
+    ID_EDIT_CLEARC          "Clear Canvas\nClear"
+    ID_OPT_SHOWTHUMBS       "Show or Hide Thumbnails\nThumbnails"
+    ID_VIEW_SOUND           "Show or Hide Sound Display\nDisplay Sound"
+    ID_FILE_CVTSTRYBRD      "Convert StoryBoard"
+    ID_FILE_EXPORT          "Export BMP"
+    ID_OPT_AUTOCOMP         "Enable or Disbale Automatic Compositing\nAutoComp"
+    ID_FILE_IMPFILE         "Import File"
+    ID_APP_HELP             "Display Help File\nHelp"
+    ID_ZOOM_25              "Zoom 25%"
+    ID_ZOOM_50              "Zoom 50%"
+    ID_ZOOM_100             "Zoom 100%"
+    ID_ZOOM_200             "Zoom 200%"
+    ID_ZOOM_300             "Zoom 300%"
+    ID_ZOOM_400             "Zoom 400%"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ZOOM_FIT             "Zoom to Fit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OPT_KEEP             "Turn  AutoSave On or Off\nAuto Save"
+    ID_EDIT_REVERT          "Revert to Disk Image\nRevert"
+    ID_FILE_CAPTURE         "Video Capture\nCapture"
+    ID_TOOL_INTENSITY       "Adjust Intensity\nIntensity"
+    ID_TOOL_RADIUS          "Adjust Radius\nRadius"
+    ID_FILE_RECORD          "Record\nRecord"
+    ID_EDIT_INS             "Insert Cel(s)\nInsert"
+    ID_EDIT_DEL             "Delete Cel(s)\nDelete"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SHEET           "Show or Hide XSheet\nXSheet"
+    ID_VIEW_FLIP            "Engage or Disengage Flip Sheet\nFlip"
+    ID_VIEW_PALETTE         "Show or Hide Palette\nPalette"
+    ID_VIEW_VCR             "Display or Hide VCR"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    IDS_CLEARALL            "This will delete ALL key frames in ALL levels."
+END
+
+STRINGTABLE 
+BEGIN
+    OPTPLAYER               "Media Player"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOO_BIG_AVI         "AVI / Movie is Larger than Max Frames, Maximize Scene ?"
+    IDS_NO_SOUND            "No Sound Hardware Available"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NO_WAVE             "Unable To Open Wave File %1"
+    IDS_BIG_AVI             "AVI / Movie is Larger than Scene, Add Frames ?"
+    IDS_OLD_VFW             "VFW Too Old"
+    IDS_BAD_WRITE           "Write Error"
+    IDS_BAD_TWAIN           "Internal error while preparing for TWAIN acquire."
+    IDS_CAP_CONNECT         "Cannot connect to video capture driver."
+    IDS_TWAIN_ERROR         "A TWAIN error occurred"
+    IDS_VID_CAP             "Capture Problem 1"
+    IDS_SCENE_CREATE        "Couldn't make scene"
+    IDS_SCENE_LOAD          "Couldn't load scene"
+    IDS_SCENE_SAVE          "Couldn't save scene"
+    IDS_FILE_CREATE         "Couldn't create %1"
+    IDS_FILE_OPEN           "Couldn't open %1"
+    IDS_FILE_READ           "Couldn't read %1"
+    IDS_SCENE_SAVE1         "Demo Version cannot save a release scene"
+    IDS_SCENE_SAVE2         "Release Version can only edit release scenes"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOT_HIRES           "Too Big (not HiRes)"
+    IDS_MAX_FRAMES          "Cannot Save, Too Many Frames"
+    IDS_REGISTER3           "Bad Code, First Letter of code must be A or W"
+    IDS_REGISTER4           "Code mismatch, second letter must match id code"
+    IDS_REGISTER5           "Check digit failure, re-enter code"
+    IDS_REGISTER6           "Version Mismatch, re-enter code"
+    IDS_SCENE_NEWER         "Scene created by a newer Version of FlipBook"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WIDE_PASTE          "The Paste Area Is Too Wide, Continue with Narrow ?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REGISTER1           "Invalid Format. Must be 6 Fields separated by dashes"
+    IDS_REGISTER2           "Code does not decrypt properly, ensure it is correct"
+    IDS_DEMO_WARNING        "Release Version reverting to Demo Mode to load Demo Scene"
+    IDS_AREYOUSURE          "Are You Sure ?"
+    IDS_NOTLITE             "Couldn't load scene, it wasn't made with FlipBook Lite"
+    IDS_NOTPT               "Couldn't load scene, it wasn't made with FlipBook Pencil Test"
+    IDS_DEMO                "Demo Mode"
+    IDS_STANDARD            "Studio"
+    IDS_LITE                "Lite"
+    IDS_PT                  "Pencil Test"
+    IDS_PRO                 "Professional"
+    IDS_NOTSTD              "Couldn't load scene, it wasn't made with FlipBook Studio"
+    IDS_NOMEMORY            "Insufficient Memory"
+    IDS_NOWINTAB            "WinTab Not Available"
+    IDS_TOO_MANY_FRAMES     "Too Many Frames"
+    IDS_TOO_MANY_LEVELS     "Too Many Levels"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_FLV_CONVERT     "FLVEncoder did not convert file"
+    IDS_ERR_FLV_ERROR       "FLVEncoder error:%d"
+    IDS_ERR_PROG2           "Program CallBack Error:%d"
+    IDS_ERR_NO_OPEN         "Cannot Open : %s"
+    IDS_CUT_WARNING         "Do You Want to cut the cell"
+    IDS_AVI_IMPORT          "Importing Video Frames"
+    IDS_FRAME_COUNT_EXCEEDED "Maximum Frame Count Exceeded"
+    IDS_AVIDLG_FASTER       "Scene Rate is Faster"
+    IDS_AVIDLG_SLOWER       "Scene Rate is Slower"
+    IDS_AVIDLG_DROP         "Drop Video Frames"
+    IDS_AVIDLG_ADD          "Add Holds"
+    IDS_AVIDLG_SMALLER      "Frame Size is Smaller Than Scene"
+    IDS_AVIDLG_LARGER       "Frame Size is Larger Than Scene"
+    IDS_AVIDLG_GRAY         "Scale To Fit Since Line Art"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NO_TABLET           "No Tablet"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BLUR_KEY            "Blur Key Type"
+    IDS_ALPHA_KEY           "Alpha Key Type"
+    IDS_EXPORTGIF           "Export GIF File"
+    IDS_EXPORT_MOVIE        "Export MOV File"
+    IDS_EMAIL_BAD           "Invalid email addresss."
+    IDS_EMAIL_MISMATCH      "The email address must be the same."
+    IDS_NO_EMAIL            "An email address is required."
+    IDS_NO_NAME             "A name is required"
+    IDS_NO_ID               "A Product ID is required."
+    IDS_NO_ORDER            "The Order Number is required."
+    IDS_CLOSING             "This Application will now close\nafter allowing you to save changes"
+    IDS_EXTRACTWAV          "Extract WAV File"
+    IDS_PAL_IMP_LITE        "LITE cannot import complex palettes"
+    IDS_PAL_READ_LITE       "LITE cannot read complex palettes"
+    IDS_NO_INI_WRITE        "Cannot Modify INI File"
+    IDS_EXPORT_FLV          "Export FLV File"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXPORT_EMBED        "Export Embedded Files"
+    IDS_SAVE_MODEL          "Save Model File"
+    IDS_LOAD_MODEL          "Load Model File"
+    IDS_CREATE_NEW          "Create New Scene"
+    IDS_EXPORTAVI           "Export AVI File"
+    IDS_EXPORTBMP           "Export Still File"
+    IDS_SELECTPLAY          "Select Player"
+    IDS_SELECTAVI           "Select AVI"
+    IDS_PAL_IMPORT          "Import Palette File"
+    IDS_PAL_EXPORT          "Export Palette File"
+    IDS_NS_KEY              "NS Key Type"
+    IDS_EW_KEY              "EW Key Type"
+    IDS_SCALE_KEY           "Scale Key Type"
+    IDS_ROTATE_KEY          "Rotate Key Type"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXPORT_LIBRARY      "Export Library File"
+    IDS_IMPORT_LIBRARY      "Import Library File"
+    IDS_EXPORT_CAMERA       "Export Camera Move File"
+    IDS_IMPORT_CAMERA       "Import Camera Move File"
+END
+
+STRINGTABLE 
+BEGIN
+    WINTAB                  "Use Win Tab"
+    BGMIN                   "Background Darkness"
+    PEG_SHOWBG              "Peg Show BG"
+    PEG_SHOWFG              "Peg Show FG"
+    PEG_DEPTH               "Peg Depth"
+    PEG_DENSITY             "Peg Density"
+    PEN_MINRAD              "Pen Min Radius"
+    PEN_MAXRAD              "Pen Max Radius"
+    PNC_MINDEN              "Pencil Min Density"
+    PNC_MAXDEN              "Pencil Max Density"
+    ERS_MINDEN              "Eraser Min Density"
+    ERS_MAXDEN              "Eraser Max Density"
+    SHT_SHOWBG              "Sheet Show BG"
+    FLIP_FEW                "Flip through the stack"
+    TAB_PRIMARY             "Tablet Primary"
+END
+
+STRINGTABLE 
+BEGIN
+    JPEG_QUAL               "JPEG"
+    DEF_PREVIEW             "Default Preview"
+    DEF_BROADCAST           "Default Broadcast"
+    MIN_PRESSURE            "Tab Min Pressure"
+    TABLET_USED             "Tablet Was Used"
+    LEFT_SCROLL             "Left Scroll Bars"
+    USE_MOUTHS              "Use Mouths"
+    EDIT_SCRUB              "Edit Scrub Cell"
+    SC_EMBED_OUT            "Embed Data Out"
+    SC_EMBED_IN             "Embed Data In"
+    SC_EMBED_TRIM           "Embed Data Trim"
+    REC_FILE                "Record Cap File"
+END
+
+STRINGTABLE 
+BEGIN
+    REC_VNAME               "Record Vid Device"
+    REC_ANAME               "Record Aud Device"
+    REC_CNAME               "Record Compressor"
+    REC_CAP_AUD             "Record Cap Audio"
+    REC_CAP_CC              "Record Cap CC"
+    REC_PREVIEW             "Record Preview"
+    REC_SIZE                "Record Preallocate Size"
+    REC_ERASE               "Record Erase File At End"
+    REC_TIME                "Record Timer"
+    REC_DELAY               "Record Delay"
+    RECORD_X                "Record X"
+    RECORD_Y                "Record Y"
+    SC_AVI_SCALE            "Scale AVI"
+    REC_GUID                "Record Cap Video"
+END
+
+STRINGTABLE 
+BEGIN
+    SC_APPLY_FRAME          "Apply Frame Flags"
+    OVERRIDE_FLAGS          "Override Flags"
+END
+
+STRINGTABLE 
+BEGIN
+    MAX_PRESSURE            "Tab Max Pressure"
+    AUTOKEEP                "AutoSave"
+    LOOPPLAY                "Loop Play"
+    DEF_WIDTH               "Default Width"
+    DEF_HEIGHT              "Default Height"
+    DEF_FRAMES              "Default Frames"
+    DEF_RATE                "Default Rate"
+    DEF_KIND                "Default Kind"
+    DEF_LEVELS              "Default Levels"
+    XSHEET_HIGHLIGHT        "XSheetHighlight"
+    LEFTHAND                "Left Handed"
+    SHOWTHUMBS              "Show Thumbs"
+    CAPTURE_DEVICE          "Capture Device"
+    VIDCAP_X                "VidCap X"
+    VIDCAP_Y                "VidCap Y"
+    VIDCAP_OPTS             "New VidCap Options"
+END
+
+STRINGTABLE 
+BEGIN
+    SCAN_CROPPEG            "Scan Crop Pegs"
+    VIDCAP_WIDTH            "VidCap Width"
+    VIDCAP_HEIGHT           "VidCap Height"
+    SELECT_FLAGS            "Selection Flags"
+    SIMPLE_CURSOR           "Simple Cursor"
+    EXTEDIT_OPTS            "ExtEdit Options"
+    HARD_ZOOM               "HardZoom"
+END
+
+STRINGTABLE 
+BEGIN
+    VIDCAP_WHITE            "VidCap White"
+    VIDCAP_GAMMA            "VidCap Gamma"
+    DEF_HOLD                "Default Hold"
+    TOOLSAME                "Tools Same Color"
+    DEF_FACTOR              "Default Factor"
+    CHECKERBG               "CheckerBoardBG"
+    SCANROTATE              "ScanRotation"
+    PRINTOPTS               "PrintOptions"
+    VIDCAP_RED              "VidCap Red"
+    VIDCAP_GREEN            "VidCap Green"
+    VIDCAP_BLUE             "VidCap Blue"
+    VIDCAP_EXTENT           "VidCap Extent"
+    SCAN_FIELD              "Scan Field Size"
+    SCAN_OFFSET             "Scan Offset"
+    SCAN_PEGTOP             "Scan Pegs On  Top"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VCR_EXIT             "Exit VCR\nExit VCR"
+    ID_VCR_HOME             "First Frame\nFirst Frame"
+    ID_VCR_BACK             "Play in Reverse\nPlay Reverse"
+    ID_VCR_STOP             "Pause\nPause"
+    ID_VCR_PLAY             "Play Forward\nPlay Forward"
+    ID_VCR_END              "Last Frame\nLast Frame"
+    ID_VCR_BSTEP            "Step Back\nBack"
+    ID_VCR_FSTEP            "Step Forward\nForward"
+    ID_VCR_LOOP             "Loop Playback\nLoop Playback"
+    ID_RATE_UP              "Increase Rate"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RATE_DOWN            "Decrease Rate"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SLD_START           "Trim Start"
+    IDC_SLD_VOLUME          "Adjust Volume"
+    IDC_SLD_RATE            "Adjust Rate"
+    IDC_SLD_LOOP            "Enable / Disable Loop"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SLD_STOP            "Trim Stop"
+END
+
+STRINGTABLE 
+BEGIN
+    IDW_SLIDER              "Frame Slider\nSlider"
+END
+
+STRINGTABLE 
+BEGIN
+    ZIDC_SND_INTERNAL       "#Internal Sound\nUnchecking will loose data"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SND_INTERNALX       "#External Sound\nChecking means sound will\nbesaved with file"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SND_ENABLE          "Enable Sound"
+    IDC_SND_WAVE            "File Name of Wave File"
+    IDC_SND_CHANGE          "Press to select a sound file"
+    IDC_SND_VMARK           "Video Mark\nIn Frames"
+    IDC_SND_SMARK           "Audio Mark\nInSeconds"
+    IDC_SND_SNIP            "Sound Snip Size\nIn Frames"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_PEN_FREE            "Freeform Drawing"
+    IDC_PEN_LINE            "Line Drawing"
+    IDC_PEN_RECT            "Rectangle"
+    IDC_PEN_ELLIPSE         "Ellipse / Circle"
+    IDC_PEN_CURVE           "Curve"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_PAL_CLONE           "Create a New Palette"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CAP_GRAY            "Use this to capture pencil lines and make the paper disappear."
+    IDC_CAP_KEYED           "This let's you make one of the colors in the image transparent."
+    IDC_CAP_PREVIOUS        "This will combine the previous image with the current image."
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CAP_KEY_OPT         "Choose which color to make transparent."
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CAP_WHTSLIDE        "Reduce this value to make more shades of white disappear."
+    IDC_CAP_GAMSLIDE        "Increase this to make the lines darker."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "sketch.rc2"  // non-App Studio edited resources
+
+#include "afxres.rc"  	// Standard components
+#include "afxprint.rc"	// printing/print preview resources
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+

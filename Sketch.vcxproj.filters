@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4abe499e-48ba-491b-b087-8dd33dddf583}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d37627de-0bb8-414c-b19b-56da67f93fe6}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{f06eefcd-b177-4451-85c0-c3fdc63de819}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="action.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Avi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Canvas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CAPPER.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CAPTURE.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBRUSH.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CCAMTOOL.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CGFILTYP.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CLICENSE.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMAYA.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CROSSBAR.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CTABLET.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ctoolbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctwain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DESKEW.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DIBCTRL.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dirdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DOFLV.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DSIMPORT.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EXTDLG.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FBQT.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Flip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GRIDCTRL.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="griddrop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inpledit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KEYER.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LIPSYNC.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mainfrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYDLGBAR.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mydoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYGIF.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Myid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYLIB.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYMCI.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mymmtim.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYPROF.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYQT.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYREC.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mysound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Myspin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYUSB.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Myview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="optdlg.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Palette.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prevdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PUCK.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RECORD.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMPLER.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SCNCLIP.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SHIFTRC.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sketch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SUBPAL.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleTip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TOOLBAR1.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tooldlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="USBKEY.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wtutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinResourceLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CScaler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SKETCH.RC">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CAPPER.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CAPTURE.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBRUSH.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CCAMTOOL.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CGFILTYP.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CLICENSE.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMAYA.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CTABLET.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ctoolbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Decomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DESKEW.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialogs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIBCTRL.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dirdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DSIMPORT.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FBQT.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fbqtexp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fbqtimp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GRIDCTRL.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="griddlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="griddrop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inpledit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KEYER.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LIPSYNC.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mainfrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemDC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msgpack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mycdefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYDLGBAR.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mydoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYGIF.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Myid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYLIB.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYMCI.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mymmtim.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="myqt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="myrec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mysound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Myspin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYUSB.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYVER.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Myview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="optdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pktdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="prevdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PUCK.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RCAPDEF.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SHIFTRC.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sketch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Slider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Splashdl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SUBPAL.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleTip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TOOLBAR1.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tooldlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tooltip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Undo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="USBKEY.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wintab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wtutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinResourceLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CScaler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="alpha.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="blur.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="brush.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Brushcur.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bucket.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="camsel.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="center.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cur00001.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cur00002.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cur00003.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cur00004.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="curew.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cursor2.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cursor3.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cursor4.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ebrush.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ebucket.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="epen.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="epencil.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Eraser.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ew.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ewcur.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="eyedrop1.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="eyedrop2.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="eyedrop3.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="flip.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="grad.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="GRAD1.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="GRAD2.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="harrow.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="larrows.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="lbrush.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="lbucket.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="lebrush.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="lebucket.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="lepen.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="lepencil.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="lpen.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="lpencil.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="magcur1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Magnify.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mycross.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mylasso.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mywand.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mywand2.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ns.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="nscur.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="nsew.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="nsewcur.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Pen.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Pencil.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Rotate.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="scale.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="scrub.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Sketch.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tbrush.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tebrush.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tefill.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tfill.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tlbrush.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tlebrush.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tlefill.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tlfill.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Trck4way.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="vcr.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap12.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="brshtool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="brushtool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="camblur.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="camdiss.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="camera.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="campan.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="camrot.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="camzoom.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="cold.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="colinfo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="colthin.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="colwide.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="copy.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dallkeys.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="density.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="disabled.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dthiskey.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="earnopen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="earopen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="erasertool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="erastool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="eyedroppertool.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="eyenopen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="eyeopen.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="FACE03.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="filltool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="flipbook.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Graymark.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="handtool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="hot.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="idrptool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="jupfly.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="jupiter.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="nextkey.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="palette.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="penciltool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="pentool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="pncltool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="prevkey.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PTTools.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Qttools.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="selecttool.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="seltool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Sketch.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="slider.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Splash.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="tbrshtol.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="tfilltol.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="thedisc.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Toolbox.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="W95mbx03.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="wandtool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="zoomtool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
