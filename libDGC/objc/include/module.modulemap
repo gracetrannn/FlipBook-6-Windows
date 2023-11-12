@@ -1,4 +1,0 @@
-module ObjcDGC {
-    umbrella header "../umbrella.h"
-    export *
-}

@@ -1,6 +1,0 @@
-class
-
-	int Selected();
-protected:
-	
-
